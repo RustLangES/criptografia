@@ -117,7 +117,20 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
     * Compatible con múltiples lenguajes y entornos de desarrollo.  
     * Ideal para aplicaciones que requieren verificación criptográfica flexible.  
   * 🌐 **Recursos:**  
-     - [Repositorio GitHub](https://github.com/delendum-xyz/valida)  
+     - [Repositorio GitHub](https://github.com/delendum-xyz/valida)
+   
+* **Succinct SP1**  
+  * 📚 **Descripción:** SP1 es un sistema desarrollado por Succinct Labs que permite ejecutar máquinas virtuales completas dentro de contratos inteligentes de Ethereum, utilizando tecnología de pruebas de conocimiento cero para verificar la ejecución fuera de la cadena. Está diseñado para optimizar la computación dentro del ecosistema blockchain, proporcionando soluciones eficientes para aplicaciones complejas.  
+  * 🔧 **Características principales:**  
+    * Ejecución de máquinas virtuales completas dentro de contratos inteligentes en Ethereum.  
+    * Uso de pruebas de conocimiento cero para verificar la ejecución fuera de la cadena.  
+    * Compatibilidad con múltiples aplicaciones blockchain avanzadas.  
+    * Escalabilidad optimizada para entornos con alta demanda computacional.  
+    * Reducción de costos computacionales mediante la validación off-chain.  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub](https://github.com/succinctlabs/sp1)  
+     - [Documentación oficial](https://docs.succinct.xyz/docs/introduction)  
+
 
 ### Recurso-Educativo
 ------
@@ -182,4 +195,36 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
     * Licencia Apache 2.0, adecuada para proyectos de código abierto y comerciales.  
   * 🌐 **Recursos:**  
      - [Repositorio GitHub](https://github.com/IrreducibleOSS/binius)  
-     - [Publicación técnica sobre Binius](https://www.irreducible.com/posts/better-faster-smaller-binius)  
+     - [Publicación técnica sobre Binius](https://www.irreducible.com/posts/better-faster-smaller-binius)
+   
+  * * **Bellman**  
+  * 📚 **Descripción:** Bellman es una biblioteca de Rust que proporciona una implementación eficiente de zk-SNARKs para criptografía de conocimiento cero. Está diseñada para facilitar la construcción de aplicaciones que requieren pruebas de validez en blockchains, incluyendo esquemas de pruebas como Groth16 y sus optimizaciones. Bellman es conocida por su enfoque en la eficiencia y la escalabilidad, ofreciendo una interfaz que simplifica el desarrollo de sistemas criptográficos en blockchain.  
+  * 🔧 **Características principales:**  
+    * Implementación eficiente de zk-SNARKs, en particular el esquema Groth16.  
+    * Optimización para pruebas rápidas y de bajo consumo computacional.  
+    * Soporte para estructuras algebraicas avanzadas como curvas elípticas.  
+    * Compatible con aplicaciones que requieren pruebas de validez en blockchains.  
+    * Enfoque en la escalabilidad y la eficiencia de la ejecución.  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub](https://github.com/zkcrypto/bellman)  
+     - [Documentación oficial](https://docs.rs/bellman/)  
+* **Spartan**  
+  * 📚 **Descripción:** Spartan es una plataforma de Microsoft para la creación y verificación de pruebas de conocimiento cero (ZKPs). Está diseñada para ser flexible y eficiente, permitiendo a los desarrolladores implementar ZKPs en diversas aplicaciones, especialmente en entornos blockchain. Spartan proporciona un conjunto de herramientas que permite la optimización de recursos en la ejecución de pruebas criptográficas, facilitando su integración en sistemas descentralizados.  
+  * 🔧 **Características principales:**  
+    * Plataforma flexible para la creación de ZKPs.  
+    * Optimización de recursos computacionales en la ejecución de pruebas.  
+    * Compatible con aplicaciones blockchain y sistemas descentralizados.  
+    * Herramientas para la creación y verificación de pruebas criptográficas a gran escala.  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub de Spartan](https://github.com/microsoft/Spartan)  
+   
+    * **Spartan2**  
+  * 📚 **Descripción:** Spartan2 es una herramienta desarrollada por Microsoft que proporciona una plataforma para realizar pruebas de conocimiento cero (ZKPs) de manera eficiente. Está diseñada para integrarse en sistemas de blockchain y permitir la construcción de aplicaciones descentralizadas mediante pruebas criptográficas. Spartan2 mejora la eficiencia de las pruebas y optimiza el uso de recursos para aplicaciones que requieren pruebas de validez a gran escala.  
+  * 🔧 **Características principales:**  
+    * Implementación de ZKPs con un enfoque en la eficiencia de las pruebas.  
+    * Optimización para minimizar el uso de recursos computacionales y mejorar la escalabilidad.  
+    * Herramientas para realizar pruebas de validez en aplicaciones de blockchain.  
+    * Integración fácil con aplicaciones descentralizadas y plataformas blockchain.  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub de Spartan2](https://github.com/microsoft/Spartan2)  
+
