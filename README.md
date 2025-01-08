@@ -13,6 +13,8 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
 * [ZKPs](##Zero-Knowledge)
   * [IA-MKZL](###IA-ZKML)
   * [Recurso Educativo](###Recurso-Educativo)
+  * [Librerías Avanzadas de ZKP](###Librerías-Avanzadas-ZKP)
+
 
 ## Zero-Knowledge
 📖 **¿Qué son las Pruebas de Conocimiento Cero (ZKPs)?**
@@ -51,4 +53,46 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
      * Diseño educativo para comprender los principios básicos de las ZKPs.  
      * Construcción paso a paso en Rust.  
   *  🌐 **Recursos:**  
-      * [Repositorio GitHub](https://koukyosyumei.github.io/MyZKP/index.html)  
+      * [Repositorio GitHub](https://koukyosyumei.github.io/MyZKP/index.html)
+   
+### Librerías Avanzadas de ZKP
+----------
+
+* **Halo2**  
+  * 📚 **Descripción:** Halo2 es una librería de pruebas de conocimiento cero que ofrece una arquitectura eficiente para zkSNARKs en Rust. Es particularmente conocida por su enfoque en la eficiencia y escalabilidad.  
+  * 🔧 **Características principales:**  
+    * Optimización de zkSNARKs utilizando el sistema de aritmética sobre curvas elípticas.  
+    * Funcionalidad de pruebas de conocimiento cero con un alto rendimiento y bajo costo computacional.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/zcash/halo2)  
+    - [Documentación](https://zcash.github.io/halo2/)
+
+* **Plonky3**  
+  * 📚 **Descripción:** Plonky3 es un conjunto de herramientas para implementar IOPs polinomiales (PIOPs), como PLONK y STARKs. Su objetivo es soportar varios esquemas de compromiso polinomial, como Brakedown.
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/Plonky3/Plonky3)
+    - [Awesome Plonky3](https://github.com/Plonky3/awesome-plonky3)
+  
+
+* **Lambworks**  
+  * 📚 **Descripción:** Es una biblioteca que implementa probadores SNARKs y STARKs, permitiendo la personalización de SNARKs. Ofrece primitivas criptográficas, alto rendimiento y herramientas fáciles de usar para trabajar con pruebas de conocimiento cero (ZKPs). Soporta diversos backends de pruebas y es compatible con diferentes frontends, orientándose a crear una librería eficiente y lista para producción.  
+  * 🔧 **Características principales:**  
+    * Implementación de SNARKs y STARKs.
+    * Soporte para primitivas criptográficas.
+    * Optimización de rendimiento.
+    * Compatible con varios backends de pruebas.
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/lambdaclass/lambdaworks)  
+    - [Documentación](https://lambdaclass.github.io/lambdaworks/)
+
+* **Arkworks**  
+  * 📚 **Descripción:** Es un conjunto de bibliotecas en Rust que proporciona herramientas para la construcción de criptografía de conocimiento cero (ZKPs) y SNARKs. Facilita la creación de pruebas eficientes y seguros para aplicaciones blockchain, soportando esquemas como PLONK, Marlin y otros. Ofrece funcionalidades avanzadas para polinomios, curvas elípticas y aritmética modular.
+  * 🔧 **Características principales:**  
+    * Implementaciones eficientes de campos finitos y curvas elípticas.
+    * Sistemas SNARK como Groth16 y Marlin.
+    * Herramientas para la creación de circuitos R1CS y algebra de polinomios.
+    * Soporta el uso de pruebas universales y productos internos de pares.
+    * Recursos para programación R1CS y pruebas de SNARK.
+   * 🌐 **Recursos:**  
+     - [Repositorio GitHub](https://github.com/arkworks-rs)  
+     - [Documentación](https://arkworks.rs/)
