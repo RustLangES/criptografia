@@ -10,41 +10,45 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
 ---
 
 ## 🛠️ **Librerías y Proyectos Destacados**
+* [ZKPs](##Zero-Knowledge)
+  * [IA-MKZL](###IA-ZKML)
+  * [Recurso Educativo](###Recurso-Educativo)
 
-### **EZKL**  
-📚 **Descripción:** EZKL permite la verificación de modelos de IA y análisis utilizando pruebas de conocimiento cero (ZKPs) sin exponer datos sensibles. Soporta modelos en formato ONNX y automatiza la generación de pruebas, facilitando la integración de ZKPs en aplicaciones de IA/ML.  
-🔧 **Características principales:**  
-- Compatible con Python, JavaScript, Rust, y CLI.  
-- Generación automatizada de pruebas sin necesidad de experiencia en criptografía.  
-- Utiliza **Lilith**, un clúster de computación en la nube, para pruebas a gran escala.  
+## Zero-Knowledge
+📖 **¿Qué son las Pruebas de Conocimiento Cero (ZKPs)?**
 
-🌐 **Recursos:**  
-- [Repositorio GitHub](https://github.com/zkonduit/ezkl)  
-- [Sitio Web](https://ezkl.xyz/)  
-- [Documentación](https://docs.ezkl.xyz/)  
+Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que permite a una parte (el "prover") demostrar que posee cierta información sin revelar la información en sí misma. Las ZKPs son fundamentales para aplicaciones que requieren alta seguridad y privacidad, como la verificación de transacciones en blockchain sin comprometer la confidencialidad de los datos.
 
----
-
-### **MyZKP**  
-📚 **Descripción:** Una implementación educativa en Rust de protocolos de Zero-Knowledge creada desde cero. Ideal para aprender y trabajar con pruebas ZK desde sus fundamentos.  
-🔧 **Características principales:**  
-- Diseño educativo para comprender los principios básicos de las ZKPs.  
-- Construcción paso a paso en Rust.  
-
-🌐 **Recursos:**  
-- [Repositorio GitHub](https://koukyosyumei.github.io/MyZKP/index.html)  
-
----
-
-### **OpenVM**  
-📚 **Descripción:** Un marco zkVM modular y extensible diseñado para personalización y compatibilidad con pruebas avanzadas. Permite ejecutar programas de longitud ilimitada, realizar pruebas on-chain, y soportar extensiones como ECDSA y aritmética modular.  
-🔧 **Características principales:**  
-- Pruebas de programas Rust de longitud ilimitada.  
-- Verificación on-chain.  
-- Extensiones avanzadas para pruebas personalizadas.  
-
-🌐 **Recursos:**  
-- [Blog](https://blog.axiom.xyz/openvm)  
-- [Repositorio GitHub](https://github.com/openvm-org/openvm)  
+### IA-ZKML
+-------
+* **EZKL**  
+  * 📚 **Descripción:** EZKL permite la verificación de modelos de IA y análisis utilizando pruebas de conocimiento cero (ZKPs) sin exponer datos sensibles. Soporta modelos en formato ONNX y automatiza la generación de pruebas, facilitando la integración de ZKPs en aplicaciones de IA/ML.  
+  * 🔧 **Características principales:**  
+      - Compatible con Python, JavaScript, Rust, y CLI.  
+      - Generación automatizada de pruebas sin necesidad de experiencia en criptografía.  
+      - Utiliza **Lilith**, un clúster de computación en la nube, para pruebas a gran escala.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/zkonduit/ezkl)  
+    - [Sitio Web](https://ezkl.xyz/)  
+    - [Documentación](https://docs.ezkl.xyz/)  
 
 
+* **OpenVM**  
+  * 📚 **Descripción:** Un marco zkVM modular y extensible diseñado para personalización y compatibilidad con pruebas avanzadas. Permite ejecutar programas de longitud ilimitada, realizar pruebas on-chain, y soportar extensiones como ECDSA y aritmética modular.  
+  * 🔧 **Características principales:**  
+    *  Pruebas de programas Rust de longitud ilimitada.  
+    *  Verificación on-chain.  
+    * Extensiones avanzadas para pruebas personalizadas.  
+* 🌐 **Recursos:**  
+  - [Blog](https://blog.axiom.xyz/openvm)  
+  - [Repositorio GitHub](https://github.com/openvm-org/openvm)  
+
+### Recurso-Educativo
+------
+* **MyZKP**  
+  * 📚 **Descripción:** Una implementación educativa en Rust de protocolos de Zero-Knowledge creada desde cero. Ideal para aprender y trabajar con pruebas ZK desde sus fundamentos.  
+  * 🔧 **Características principales:**  
+     * Diseño educativo para comprender los principios básicos de las ZKPs.  
+     * Construcción paso a paso en Rust.  
+  *  🌐 **Recursos:**  
+      * [Repositorio GitHub](https://koukyosyumei.github.io/MyZKP/index.html)  
