@@ -1,6 +1,6 @@
 # 🔐 **Awesome Rust Cryptography**  
 
-🌟 Una colección curada de herramientas, bibliotecas y recursos en Rust para trabajar con criptografía, Zero-Knowledge Proofs (ZKPs), y tecnologías relacionadas. ¡Explora el poder de Rust en el mundo de la seguridad y privacidad digital! 🚀  
+🌟 Una colección curada de herramientas, bibliotecas y recursos en Rust para trabajar con criptografía. ¡Explora el poder de Rust en el mundo de la seguridad y privacidad digital! 🚀  
 
 ## 📖 **¿Por qué Rust para Criptografía?**  
 Rust ofrece seguridad, eficiencia y soporte para programación concurrente, convirtiéndolo en un lenguaje ideal para construir aplicaciones y herramientas criptográficas confiables y escalables. 💪  
