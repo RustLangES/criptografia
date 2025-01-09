@@ -15,8 +15,11 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
   * [Recurso Educativo](###Recurso-Educativo)
   * [Librerías Avanzadas de ZKP](###Librerías-Avanzadas-ZKP)
 * [MPC](##Secure-Multiparty-Computation)
- * [Librerias de MPC](###Librerias-de-MPC)
- * [Frameworks de MPC](##Frameworks-de-MPC)
+  * [Librerias de MPC](###Librerias-de-MPC)
+  * [Frameworks de MPC](##Frameworks-de-MPC)
+* [FHE](##Fully-Homomorphic-Encryption)
+  * [Librerias de FHE](###Librerias-de-FHE)
+ 
 ## Zero-Knowledge
 📖 **¿Qué son las Pruebas de Conocimiento Cero (ZKPs)?**
 
@@ -289,7 +292,7 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
      - [Repositorio GitHub de mpz](https://github.com/privacy-scaling-explorations/mpz)  
      - [Documentación](https://docs.rs/mpz/)
 
-### Frameworks de MPC
+### Frameworks-de-MPC
 * **ark-mpc**  
   * 📚 **Descripción:** ark-mpc es una biblioteca en Rust que proporciona una infraestructura para implementar protocolos de cálculo multiparte (MPC) utilizando la biblioteca arkworks. Está diseñada para ser eficiente y escalable, permitiendo ejecutar operaciones criptográficas de forma segura y distribuida, ideal para aplicaciones en entornos descentralizados como blockchain.  
   * 🔧 **Características principales:**  
@@ -302,7 +305,7 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
      - [Repositorio GitHub de ark-mpc](https://github.com/renegade-fi/ark-mpc)  
      - [Documentación](https://docs.rs/ark-mpc/)
    
-    * **stoffelMPC**  
+* **stoffelMPC**  
   * 📚 **Descripción:** stoffelMPC es una biblioteca en Rust que implementa protocolos de Computación Multiparte Segura (MPC) para preservar la privacidad de los datos al realizar cálculos distribuidos. Utiliza técnicas criptográficas avanzadas para permitir que varias partes colaboren en el procesamiento de datos sin revelar información confidencial.  
   * 🔧 **Características principales:**  
     * Implementación de protocolos MPC eficientes y seguros.  
@@ -312,5 +315,45 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
     * Facilita la creación de soluciones de privacidad y computación distribuida.  
   * 🌐 **Recursos:**  
     - [Repositorio GitHub](https://github.com/hashcloak/stoffelMPC)  
- 
+--------------------- 
+## Fully-Homomorphic-Encryption
+---------------------
+### Librerias-de-FHE
 
+* **tfhe-rs**  
+  * 📚 **Descripción:** tfhe-rs es una biblioteca en Rust que implementa la encriptación homomórfica totalmente funcional (TFHE, por sus siglas en inglés). Proporciona una forma eficiente y segura de realizar operaciones en datos cifrados, lo que permite el procesamiento de información sensible sin necesidad de descifrarla. Está orientado a facilitar el uso de TFHE en aplicaciones de privacidad y computación segura.  
+  * 🔧 **Características principales:**  
+    * Implementación de encriptación homomórfica totalmente funcional (TFHE).  
+    * Permite realizar operaciones aritméticas y lógicas en datos cifrados.  
+    * Alta eficiencia en el procesamiento de datos cifrados.  
+    * Compatible con aplicaciones de privacidad y computación segura.  
+    * Facilita el desarrollo de soluciones para la protección de datos y privacidad en entornos descentralizados.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/zama-ai/tfhe-rs)  
+    - [Documentación](https://docs.zama.ai/tfhe-rs)
+
+* **openfhe-rs**  
+  * 📚 **Descripción:** openfhe-rs es una implementación en Rust de OpenFHE, un marco de trabajo de encriptación homomórfica (FHE) de código abierto. Permite realizar operaciones sobre datos cifrados sin necesidad de descifrarlos, manteniendo la privacidad de los datos durante el procesamiento. OpenFHE es una tecnología emergente que es clave para aplicaciones de privacidad y computación segura en entornos de confianza.  
+  * 🔧 **Características principales:**  
+    * Implementación de encriptación homomórfica en Rust.
+    * Soporta una amplia variedad de operaciones en datos cifrados sin necesidad de descifrarlos.
+    * Basado en OpenFHE, un marco de trabajo conocido por su seguridad y flexibilidad.
+    * Permite a los desarrolladores crear aplicaciones que protejan la privacidad de los datos durante su procesamiento.
+    * Compatible con múltiples métodos de encriptación homomórfica avanzados.
+    * Optimizado para aplicaciones que requieren computación segura y protección de datos.
+    * Diseño modular y extensible para integrarse fácilmente en diferentes proyectos.
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/fairmath/openfhe-rs)  
+    - [Documentación](https://openfhe-rust-wrapper.readthedocs.io/en/latest/)
+
+* **Phantom-ZXone**  
+  * 📚 **Descripción:** Phantom Zone es un sistema basado en Rust para la computación de pruebas de conocimiento cero (ZKPs) utilizando esquemas avanzados de pruebas de conocimiento. Está diseñado para permitir la creación de sistemas seguros y privados basados en pruebas de integridad y privacidad. Su objetivo es facilitar el uso de pruebas de conocimiento cero de forma más eficiente y flexible en diversas aplicaciones criptográficas.  
+  * 🔧 **Características principales:**  
+    * Implementación avanzada de pruebas de conocimiento cero (ZKPs).
+    * Soporta esquemas modernos de ZKPs como STARKs y SNARKs.
+    * Arquitectura optimizada para la privacidad y seguridad.
+    * Herramientas para la construcción de pruebas de integridad sin revelar información sensible.
+    * Compatible con aplicaciones blockchain y entornos distribuidos que requieren privacidad.
+    * Diseño modular que permite personalizar los esquemas de pruebas.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/gausslabs/phantom-zone)
