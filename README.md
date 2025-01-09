@@ -14,8 +14,9 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
   * [IA-ZKML](###IA-ZKML-ZKVM)
   * [Recurso Educativo](###Recurso-Educativo)
   * [Librerías Avanzadas de ZKP](###Librerías-Avanzadas-ZKP)
-
-
+* [MPC](##Secure-Multiparty-Computation)
+ * [Librerias de MPC](###Librerias-de-MPC)
+ * [Frameworks de MPC](##Frameworks-de-MPC)
 ## Zero-Knowledge
 📖 **¿Qué son las Pruebas de Conocimiento Cero (ZKPs)?**
 
@@ -218,7 +219,7 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
   * 🌐 **Recursos:**  
      - [Repositorio GitHub de Spartan](https://github.com/microsoft/Spartan)  
    
-    * **Spartan2**  
+ * **Spartan2**  
   * 📚 **Descripción:** Spartan2 es una herramienta desarrollada por Microsoft que proporciona una plataforma para realizar pruebas de conocimiento cero (ZKPs) de manera eficiente. Está diseñada para integrarse en sistemas de blockchain y permitir la construcción de aplicaciones descentralizadas mediante pruebas criptográficas. Spartan2 mejora la eficiencia de las pruebas y optimiza el uso de recursos para aplicaciones que requieren pruebas de validez a gran escala.  
   * 🔧 **Características principales:**  
     * Implementación de ZKPs con un enfoque en la eficiencia de las pruebas.  
@@ -227,4 +228,89 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
     * Integración fácil con aplicaciones descentralizadas y plataformas blockchain.  
   * 🌐 **Recursos:**  
      - [Repositorio GitHub de Spartan2](https://github.com/microsoft/Spartan2)  
+
+* **Bulletproofs**  
+  * 📚 **Descripción:** Bulletproofs es un esquema de prueba de conocimiento cero (ZKP) eficiente y sin confianza en el sistema de verificación. Proporciona pruebas de rango de forma compacta y eficientes, optimizando las pruebas criptográficas sin necesidad de configuraciones confiables. Bulletproofs se utiliza ampliamente en aplicaciones de blockchain y criptomonedas para garantizar la privacidad y la integridad sin comprometer el rendimiento.  
+  * 🔧 **Características principales:**  
+    * Pruebas compactas de rango sin necesidad de configuraciones confiables.  
+    * Optimización de la eficiencia criptográfica.  
+    * Aceleración de pruebas para aplicaciones blockchain.  
+    * Ideal para entornos con altos requisitos de privacidad y escalabilidad.  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub de Bulletproofs](https://github.com/dalek-cryptography/bulletproofs)  
+     - [Documentación oficial](https://dalekcryptography.github.io/bulletproofs/)
+
+* **Plonk**  
+  * 📚 **Descripción:** Plonk es un sistema de prueba de conocimiento cero eficiente y universal que permite verificar cualquier computación en un esquema criptográfico sin comprometer la seguridad o la confianza. Plonk utiliza un esquema de aritmética sobre campos finitos y es ampliamente utilizado en blockchain para ofrecer pruebas rápidas y escalables sin comprometer la privacidad.  
+  * 🔧 **Características principales:**  
+    * Sistema de prueba eficiente basado en la aritmética de campos finitos.  
+    * Pruebas universales sin requerir configuraciones confiables.  
+    * Soporta una amplia variedad de aplicaciones y casos de uso en blockchain.  
+    * Alta escalabilidad y velocidad en comparación con otros esquemas de ZKP.  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub de Plonk](https://github.com/dusk-network/plonk)  
+     - [Documentación oficial](https://dusk-network.github.io/plonk/)
+
+-----------
+## Secure-Multiparty-Computation
+-----------
+### Librerias-de-MPC
+* **Swanky**  
+  * 📚 **Descripción:** Swanky es una biblioteca y conjunto de herramientas en Rust desarrolladas por Galois Inc., diseñada para facilitar la creación y el uso de pruebas de conocimiento cero (ZKPs) en aplicaciones. Su enfoque está en simplificar la construcción de aplicaciones ZK de alto rendimiento y eficiencia, utilizando técnicas como SNARKs y pruebas de circuito de R1CS. Swanky también se centra en ofrecer una infraestructura robusta para la integración de estas pruebas en aplicaciones basadas en blockchain.  
+  * 🔧 **Características principales:**  
+    * Implementación de SNARKs y pruebas de R1CS para aplicaciones basadas en blockchain.  
+    * Soporte para la creación de pruebas de conocimiento cero de alto rendimiento.  
+    * Optimización de circuitos y pruebas para eficiencia y escalabilidad.  
+    * Bibliotecas bien documentadas y fáciles de integrar en aplicaciones existentes.  
+    * Enfoque en la privacidad y la verificación de datos sin comprometer la seguridad.  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub de Swanky](https://github.com/GaloisInc/swanky)  
+     - [Documentación oficial](https://swanky.galois.com/)
+* **smol-mpc**  
+  * 📚 **Descripción:** smol-mpc es una biblioteca ligera en Rust diseñada para facilitar la implementación de protocolos de Computación Multiparte Segura (MPC, por sus siglas en inglés). Está enfocada en proporcionar una forma sencilla y eficiente de integrar la computación segura entre múltiples partes sin revelar datos privados, siendo adecuada para aplicaciones que requieren privacidad y seguridad en la computación distribuida.  
+  * 🔧 **Características principales:**  
+    * Implementación de protocolos MPC de bajo nivel en Rust.  
+    * Optimización para un uso eficiente de recursos y bajo consumo de memoria.  
+    * Interfaz fácil de usar para integrar MPC en aplicaciones.  
+    * Compatible con diferentes entornos y escenarios de computación distribuida.  
+    * Enfoque en la seguridad y privacidad, sin necesidad de confiar en una sola entidad.  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub de smol-mpc](https://github.com/hashcloak/smol-mpc)  
+     - [Documentación](https://docs.rs/smol-mpc/)
+* **mpz**  
+  * 📚 **Descripción:** mpz es una biblioteca en Rust desarrollada como parte del proyecto Privacy Scaling Explorations (PSE). Su objetivo principal es proporcionar herramientas para facilitar la implementación de sistemas de privacidad en aplicaciones blockchain y criptográficas, específicamente centrándose en las pruebas de conocimiento cero (zk). mpz se integra con otras herramientas de la suite PSE para permitir la creación de sistemas escalables y privados.  
+  * 🔧 **Características principales:**  
+    * Implementación de algoritmos y herramientas para la creación de pruebas de conocimiento cero.  
+    * Focalizado en la escalabilidad y la privacidad en aplicaciones distribuidas.  
+    * Interoperabilidad con otras bibliotecas de la suite PSE.  
+    * Código optimizado para un rendimiento eficiente en aplicaciones blockchain.  
+    * Soporte para varios tipos de pruebas criptográficas avanzadas.  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub de mpz](https://github.com/privacy-scaling-explorations/mpz)  
+     - [Documentación](https://docs.rs/mpz/)
+
+### Frameworks de MPC
+* **ark-mpc**  
+  * 📚 **Descripción:** ark-mpc es una biblioteca en Rust que proporciona una infraestructura para implementar protocolos de cálculo multiparte (MPC) utilizando la biblioteca arkworks. Está diseñada para ser eficiente y escalable, permitiendo ejecutar operaciones criptográficas de forma segura y distribuida, ideal para aplicaciones en entornos descentralizados como blockchain.  
+  * 🔧 **Características principales:**  
+    * Implementación eficiente de MPC para seguridad distribuida.  
+    * Integración con arkworks para trabajar con campos finitos y curvas elípticas.  
+    * Soporte para circuitos criptográficos y operaciones privadas.  
+    * Compatible con aplicaciones de blockchain para el procesamiento seguro de datos.  
+    * Facilita el diseño y la computación distribuida de criptografía en múltiples partes.  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub de ark-mpc](https://github.com/renegade-fi/ark-mpc)  
+     - [Documentación](https://docs.rs/ark-mpc/)
+   
+    * **stoffelMPC**  
+  * 📚 **Descripción:** stoffelMPC es una biblioteca en Rust que implementa protocolos de Computación Multiparte Segura (MPC) para preservar la privacidad de los datos al realizar cálculos distribuidos. Utiliza técnicas criptográficas avanzadas para permitir que varias partes colaboren en el procesamiento de datos sin revelar información confidencial.  
+  * 🔧 **Características principales:**  
+    * Implementación de protocolos MPC eficientes y seguros.  
+    * Proporciona privacidad en los cálculos entre múltiples participantes.  
+    * Basado en fundamentos criptográficos para garantizar la seguridad.  
+    * Compatible con aplicaciones de blockchain y otros sistemas descentralizados.  
+    * Facilita la creación de soluciones de privacidad y computación distribuida.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/hashcloak/stoffelMPC)  
+ 
 
