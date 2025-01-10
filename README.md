@@ -254,6 +254,18 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
      - [Repositorio GitHub de Plonk](https://github.com/dusk-network/plonk)  
      - [Documentación oficial](https://dusk-network.github.io/plonk/)
 
+* **Jellyfish**  
+  * 📚 **Descripción:**  
+    Jellyfish es una biblioteca en Rust desarrollada por Espresso Systems que implementa el sistema de pruebas de conocimiento cero PLONK y sus extensiones.  
+
+  * 🔧 **Características principales:**  
+    * Implementación completa de PLONK y extensiones.  
+    * Modularidad y flexibilidad para diferentes casos de uso.  
+    * Optimización para generación y verificación rápidas de pruebas.  
+    * Compatible con entornos que requieren privacidad y escalabilidad.  
+
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/EspressoSystems/jellyfish)
 -----------
 ## Secure-Multiparty-Computation
 -----------
