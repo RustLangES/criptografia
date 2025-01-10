@@ -267,24 +267,22 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
 
   * 🌐 **Recursos:**  
     - [Repositorio GitHub](https://github.com/EspressoSystems/jellyfish)
-   
-### ZKTLS
+ 
+## ZKTLS
 
-   * **TLSNotary**  
-  * 📚 **Descripción:**  
-    TLSNotary es un protocolo y herramienta de código abierto que permite realizar auditorías criptográficas de sesiones TLS, proporcionando pruebas verificables de las comunicaciones realizadas entre un cliente y un servidor sin comprometer la privacidad del cliente.  
+* **TLSNotary**  
+  * 📚 **Descripción:**  TLSNotary es un protocolo y herramienta de código abierto que permite realizar auditorías criptográficas de sesiones TLS, proporcionando pruebas verificables de las comunicaciones realizadas entre un cliente y un servidor sin comprometer la privacidad del cliente.    
 
   * 🔧 **Características principales:**  
-    * Generación de pruebas criptográficas de sesiones TLS.  
-    * Privacidad garantizada para el cliente durante el proceso de auditoría.  
-    * Compatible con una amplia gama de aplicaciones y servicios web.  
-    * Ideal para casos de uso que requieren transparencia y verificabilidad, como auditorías financieras o legales.  
-    * Implementado en Python, con enfoque en accesibilidad y facilidad de uso.  
+    * Generación de pruebas criptográficas de sesiones TLS.
+    *  Privacidad garantizada para el cliente durante el proceso de auditoría.
+    *  Compatible con una amplia gama de aplicaciones y servicios web.
+    *  Ideal para casos de uso que requieren transparencia y verificabilidad, como auditorías financieras o legales.
+    *   Implementado en Python, con enfoque en accesibilidad y facilidad de uso.  
 
   * 🌐 **Recursos:**  
-    - [Repositorio GitHub](https://github.com/tlsnotary/tlsn)  
+    -  [Repositorio GitHub](https://github.com/tlsnotary/tlsn)  
     - [Documentación oficial](https://docs.tlsnotary.org/)
-
 
 -----------
 ## Secure-Multiparty-Computation
