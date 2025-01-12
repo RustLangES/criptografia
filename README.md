@@ -289,38 +289,22 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
 -----------
 ### Librerias-de-MPC
 * **Swanky**  
-  * 📚 **Descripción:** Es una biblioteca y conjunto de herramientas en Rust desarrolladas por Galois Inc., diseñada para facilitar la creación y el uso de pruebas de conocimiento cero (ZKPs) en aplicaciones. Su enfoque está en simplificar la construcción de aplicaciones ZK de alto rendimiento y eficiencia, utilizando técnicas como SNARKs y pruebas de circuito de R1CS. Swanky también se centra en ofrecer una infraestructura robusta para la integración de estas pruebas en aplicaciones basadas en blockchain.  
+  * 📚 **Descripción:** Swanky es una librería diseñada para facilitar el desarrollo de protocolos de Cómputo Multi-Partido (MPC). Ofrece herramientas para implementar esquemas de intercambio seguro de datos y operaciones computacionales entre múltiples partes, manteniendo la privacidad de los datos.  
   * 🔧 **Características principales:**  
-    * Implementación de SNARKs y pruebas de R1CS para aplicaciones basadas en blockchain.  
-    * Soporte para la creación de pruebas de conocimiento cero de alto rendimiento.  
-    * Optimización de circuitos y pruebas para eficiencia y escalabilidad.  
-    * Bibliotecas bien documentadas y fáciles de integrar en aplicaciones existentes.  
-    * Enfoque en la privacidad y la verificación de datos sin comprometer la seguridad.  
+    * Implementación modular y flexible para experimentación con protocolos MPC.
+    * Soporte para esquemas como Garbled Circuits (GC) y Oblivious Transfer (OT).
+    * Enfocado en ofrecer una base sólida para desarrolladores interesados en investigación y producción de soluciones basadas en MPC.
   * 🌐 **Recursos:**  
      - [Repositorio GitHub de Swanky](https://github.com/GaloisInc/swanky)  
-     - [Documentación oficial](https://swanky.galois.com/)
 * **Smol-MPC**  
-  * 📚 **Descripción:** Es una biblioteca ligera en Rust diseñada para facilitar la implementación de protocolos de Computación Multiparte Segura (MPC, por sus siglas en inglés). Está enfocada en proporcionar una forma sencilla y eficiente de integrar la computación segura entre múltiples partes sin revelar datos privados, siendo adecuada para aplicaciones que requieren privacidad y seguridad en la computación distribuida.  
+  * 📚 **Descripción:** Smol-MPC es una librería ligera y eficiente para implementar protocolos de Cómputo Multi-Partido (MPC). Diseñada por HashCloak, esta librería se enfoca en brindar una solución simple, flexible y optimizada para realizar cálculos colaborativos de forma segura y privada entre múltiples participantes.
   * 🔧 **Características principales:**  
-    * Implementación de protocolos MPC de bajo nivel en Rust.  
-    * Optimización para un uso eficiente de recursos y bajo consumo de memoria.  
-    * Interfaz fácil de usar para integrar MPC en aplicaciones.  
-    * Compatible con diferentes entornos y escenarios de computación distribuida.  
-    * Enfoque en la seguridad y privacidad, sin necesidad de confiar en una sola entidad.  
+    * Compatibilidad con protocolos básicos de MPC, permitiendo operaciones colaborativas sin comprometer la privacidad de los datos.
+    * Ligera y fácil de integrar en proyectos, ideal para quienes buscan una librería MPC accesible para experimentación o aplicaciones más pequeñas.
+    * Enfocada en ser minimalista, por lo que es una excelente opción para desarrolladores que buscan comenzar con MPC sin complejidades innecesarias.
   * 🌐 **Recursos:**  
      - [Repositorio GitHub de smol-mpc](https://github.com/hashcloak/smol-mpc)  
      - [Documentación](https://docs.rs/smol-mpc/)
-* **MPZ**  
-  * 📚 **Descripción:** mpz es una biblioteca en Rust desarrollada como parte del proyecto Privacy Scaling Explorations (PSE). Su objetivo principal es proporcionar herramientas para facilitar la implementación de sistemas de privacidad en aplicaciones blockchain y criptográficas, específicamente centrándose en las pruebas de conocimiento cero (zk). mpz se integra con otras herramientas de la suite PSE para permitir la creación de sistemas escalables y privados.  
-  * 🔧 **Características principales:**  
-    * Implementación de algoritmos y herramientas para la creación de pruebas de conocimiento cero.  
-    * Focalizado en la escalabilidad y la privacidad en aplicaciones distribuidas.  
-    * Interoperabilidad con otras bibliotecas de la suite PSE.  
-    * Código optimizado para un rendimiento eficiente en aplicaciones blockchain.  
-    * Soporte para varios tipos de pruebas criptográficas avanzadas.  
-  * 🌐 **Recursos:**  
-     - [Repositorio GitHub de mpz](https://github.com/privacy-scaling-explorations/mpz)  
-     - [Documentación](https://docs.rs/mpz/)
 
 ### Frameworks-de-MPC
 * **ARK-MPC**  
@@ -377,13 +361,11 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
     - [Documentación](https://openfhe-rust-wrapper.readthedocs.io/en/latest/)
 
 * **Phantom-Zone**  
-  * 📚 **Descripción:** Phantom Zone es un sistema basado en Rust para la computación de pruebas de conocimiento cero (ZKPs) utilizando esquemas avanzados de pruebas de conocimiento. Está diseñado para permitir la creación de sistemas seguros y privados basados en pruebas de integridad y privacidad. Su objetivo es facilitar el uso de pruebas de conocimiento cero de forma más eficiente y flexible en diversas aplicaciones criptográficas.  
+  * 📚 **Descripción:** Phantom-Zone es una librería que permite la construcción de protocolos de Cómputo Multi-Partido (MPC) de forma eficiente y segura. Desarrollada por Gauss Labs, esta herramienta está diseñada para ser escalable y aplicable a entornos de alta privacidad. Se centra en proporcionar implementaciones robustas para la ejecución de cálculos colaborativos sin comprometer la seguridad de los datos involucrados. 
   * 🔧 **Características principales:**  
-    * Implementación avanzada de pruebas de conocimiento cero (ZKPs).
-    * Soporta esquemas modernos de ZKPs como STARKs y SNARKs.
-    * Arquitectura optimizada para la privacidad y seguridad.
-    * Herramientas para la construcción de pruebas de integridad sin revelar información sensible.
-    * Compatible con aplicaciones blockchain y entornos distribuidos que requieren privacidad.
-    * Diseño modular que permite personalizar los esquemas de pruebas.  
-  * 🌐 **Recursos:**  
+    * Utiliza encriptación homomórfica totalmente multiplicativa para cálculos sobre entradas privadas de múltiples partes.
+    * Ofrece dos tipos de protocolos de multi-partido: uno no interactivo y otro interactivo.
+    * Permite realizar operaciones aritméticas y comparaciones en números enteros sin signo de 8 bits (FheUint8), con manejo de sobrecarga y errores de división por cero.
+    * La librería se encuentra en etapa experimental y no debe utilizarse en producción para manejar datos sensibles debido a la falta de auditoría de seguridad.
+    
     - [Repositorio GitHub](https://github.com/gausslabs/phantom-zone)
