@@ -307,26 +307,16 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
      - [Documentación](https://docs.rs/smol-mpc/)
 
 ### Frameworks-de-MPC
-* **ARK-MPC**  
-  * 📚 **Descripción:** Es una biblioteca en Rust que proporciona una infraestructura para implementar protocolos de cálculo multiparte (MPC) utilizando la biblioteca arkworks. Está diseñada para ser eficiente y escalable, permitiendo ejecutar operaciones criptográficas de forma segura y distribuida, ideal para aplicaciones en entornos descentralizados como blockchain.  
-  * 🔧 **Características principales:**  
-    * Implementación eficiente de MPC para seguridad distribuida.  
-    * Integración con arkworks para trabajar con campos finitos y curvas elípticas.  
-    * Soporte para circuitos criptográficos y operaciones privadas.  
-    * Compatible con aplicaciones de blockchain para el procesamiento seguro de datos.  
-    * Facilita el diseño y la computación distribuida de criptografía en múltiples partes.  
-  * 🌐 **Recursos:**  
-     - [Repositorio GitHub de ark-mpc](https://github.com/renegade-fi/ark-mpc)  
-     - [Documentación](https://docs.rs/ark-mpc/)
    
 * **stoffelMPC**  
-  * 📚 **Descripción:** Es una biblioteca en Rust que implementa protocolos de Computación Multiparte Segura (MPC) para preservar la privacidad de los datos al realizar cálculos distribuidos. Utiliza técnicas criptográficas avanzadas para permitir que varias partes colaboren en el procesamiento de datos sin revelar información confidencial.  
+  * 📚 **Descripción:** StoffelMPC es un marco de trabajo para cómputo multi-partido (MPC, por sus siglas en inglés). Permite a los desarrolladores escribir software de MPC en un lenguaje específico de dominio que abstrae los detalles internos de los protocolos de MPC.
+
+Estos programas de MPC se compilan a bytecode para el StoffelVM, que es una máquina virtual que permite ejecutarlos en un entorno multi-partido. Nuestra implementación se enfoca en protocolos MPC robustos, ya que estos son interesantes en el contexto de MPC como una sidechain. Esto significa que el MPC se utiliza para proporcionar la capa de privacidad que actualmente falta en las blockchains públicas.
   * 🔧 **Características principales:**  
-    * Implementación de protocolos MPC eficientes y seguros.  
-    * Proporciona privacidad en los cálculos entre múltiples participantes.  
-    * Basado en fundamentos criptográficos para garantizar la seguridad.  
-    * Compatible con aplicaciones de blockchain y otros sistemas descentralizados.  
-    * Facilita la creación de soluciones de privacidad y computación distribuida.  
+    * Permite escribir programas en un lenguaje específico de dominio, simplificando el desarrollo de cómputo multi-partido.
+    * Los programas se compilan a bytecode para ser ejecutados en StoffelVM, una máquina virtual especializada.
+    * Enfocado en protocolos robustos, ideales para aplicaciones que requieren alta seguridad y fiabilidad.
+    * Proporciona una capa de privacidad para blockchains públicas, protegiendo datos y transacciones.  
   * 🌐 **Recursos:**  
     - [Repositorio GitHub](https://github.com/hashcloak/stoffelMPC)  
 --------------------- 
