@@ -21,9 +21,9 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
 * [FHE](##Fully-Homomorphic-Encryption)
   * [Librerias de FHE](###Librerias-de-FHE)
 * [Hash Function](##Hash-Function)
- * [Hash Functions and Friends](###Hash-Functions-and-Friends)
- * [Poseido](###Poseido)
- * [Password-Hashing-Functions](###Password-Hashing-Functions)
+  * [Hash Functions and Friends](###Hash-Functions-and-Friends)
+  * [Poseido](###Poseido)
+  * [Password-Hashing-Functions](###Password-Hashing-Functions)
 ## Zero-Knowledge
 📖 **¿Qué son las Pruebas de Conocimiento Cero (ZKPs)?**
 
