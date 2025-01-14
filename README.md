@@ -20,7 +20,10 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
   * [Frameworks de MPC](##Frameworks-de-MPC)
 * [FHE](##Fully-Homomorphic-Encryption)
   * [Librerias de FHE](###Librerias-de-FHE)
- 
+* [Hash Function](##Hash-Function)
+ * [Hash Functions and Friends](###Hash-Functions-and-Friends)
+ * [Poseido](###Poseido)
+ * [### Password-Hashing-Functions](###Password-Hashing-Functions)
 ## Zero-Knowledge
 📖 **¿Qué son las Pruebas de Conocimiento Cero (ZKPs)?**
 
@@ -370,5 +373,165 @@ Estos programas de MPC se compilan a bytecode para el StoffelVM, que es una máq
     * Ofrece dos tipos de protocolos de multi-partido: uno no interactivo y otro interactivo.
     * Permite realizar operaciones aritméticas y comparaciones en números enteros sin signo de 8 bits (FheUint8), con manejo de sobrecarga y errores de división por cero.
     * La librería se encuentra en etapa experimental y no debe utilizarse en producción para manejar datos sensibles debido a la falta de auditoría de seguridad.
-    
+ * 🌐 **Recursos:**  
     - [Repositorio GitHub](https://github.com/gausslabs/phantom-zone)
+   
+## Hash-Function
+### Hash-Functions-and-Friends
+* **RustCrypto/hashes**  
+  * 📚 **Descripción:**  
+    RustCrypto/hashes es un conjunto de implementaciones de funciones hash criptográficas desarrolladas en Rust. Este repositorio incluye soporte para una variedad de algoritmos de hash ampliamente utilizados, diseñados para ser seguros y eficientes. Es una herramienta esencial para proyectos que requieren integridad de datos, verificación de firmas digitales y aplicaciones criptográficas.  
+  * 🔧 **Características principales:**  
+    * Implementaciones seguras y en constante desarrollo de funciones hash como SHA-2, SHA-3, Blake2, y más.
+    * Compatibilidad con algoritmos hash autenticados como Poly1305.
+    * Diseño modular para facilitar su integración en otros proyectos de Rust.
+    * Enfoque en el rendimiento y la seguridad mediante la optimización de código y el uso de pruebas exhaustivas.
+    * Totalmente compatible con el estándar `no_std`, permitiendo su uso en entornos de recursos limitados.
+    * Activo y mantenido por la comunidad de RustCrypto, con contribuciones regulares y soporte para las últimas actualizaciones del lenguaje Rust.
+   
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/gausslabs/phantom-zone)
+
+* **BLAKE3**  
+  * 📚 **Descripción:**  
+    BLAKE3 es una función hash criptográfica moderna diseñada para ser rápida, segura y altamente paralelizable. Desarrollada por el equipo de BLAKE3, esta implementación combina las mejores características de algoritmos como BLAKE2, SHA-3 y Merkle-Damgård, ofreciendo un rendimiento excepcional en una variedad de plataformas, desde dispositivos móviles hasta servidores de alto rendimiento.  
+  * 🔧 **Características principales:**  
+    * Más rápida que las funciones hash SHA-2 y SHA-3 en la mayoría de los entornos.
+    * Diseñada para ser altamente paralelizable y escalar en hardware multinúcleo y SIMD.
+    * Soporta hashing incremental, hashing de claves y derivación de claves.
+    * Construida sobre un diseño seguro que utiliza un árbol Merkle, permitiendo hashing eficiente en grandes cantidades de datos.
+    * Implementaciones disponibles en múltiples lenguajes, incluyendo Rust, C, Python y más.
+    * Auditada y respaldada por una amplia comunidad de desarrolladores.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/BLAKE3-team/BLAKE3)
+     
+* **RustCrypto/KDFs**  
+  * 📚 **Descripción:**  
+    RustCrypto/KDFs es una colección de implementaciones de funciones de derivación de claves (Key Derivation Functions, KDFs) desarrolladas en Rust. Este repositorio incluye soporte para algoritmos ampliamente utilizados en aplicaciones criptográficas que requieren generar claves seguras a partir de entradas como contraseñas o claves maestras. Está diseñado para ofrecer seguridad, eficiencia y facilidad de integración en proyectos de Rust.  
+  * 🔧 **Características principales:**  
+    * Soporte para algoritmos KDF como HKDF (HMAC-based Extract-and-Expand Key Derivation Function) y PBKDF2 (Password-Based Key Derivation Function 2).
+    * Diseñado para ser seguro y eficiente, con un enfoque en el rendimiento.
+    * Compatible con el estándar `no_std`, permitiendo su uso en entornos de recursos limitados.
+    * Modular y fácil de integrar en aplicaciones Rust que requieren generación de claves derivadas.
+    * Mantenido por la comunidad de RustCrypto, con contribuciones regulares y pruebas exhaustivas para garantizar su confiabilidad.  
+  * 🌐 **Recursos:** 
+    - [Repositorio GitHub](https://github.com/RustCrypto/KDFs)
+
+* **RustCrypto/universal-hashes**  
+  * 📚 **Descripción:**  
+    RustCrypto/universal-hashes es una colección de implementaciones de funciones hash universales desarrolladas en Rust. Estas funciones hash son utilizadas principalmente como bloques básicos en la construcción de algoritmos criptográficos, como códigos de autenticación de mensajes (MACs) y cifrados autenticados (AEAD).  
+  * 🔧 **Características principales:**  
+    * Implementaciones de funciones hash universales como Poly1305 y GHASH (utilizado en Galois/Counter Mode, GCM).
+    * Diseñado para ser seguro, eficiente y fácil de integrar en aplicaciones Rust.
+    * Compatible con el estándar `no_std`, lo que lo hace ideal para sistemas con recursos limitados.
+    * Modular y compatible con otros componentes de RustCrypto, permitiendo una integración fluida en proyectos criptográficos.
+    * Mantenido activamente por la comunidad de RustCrypto, con un enfoque en la seguridad y el rendimiento.  
+ * 🌐 **Recursos:** 
+    - [Repositorio GitHub](https://github.com/RustCrypto/universal-hashes)
+  
+   * **tiny-keccak**  
+  * 📚 **Descripción:**  
+    **tiny-keccak** es una implementación minimalista y eficiente de la función hash Keccak en Rust, que también es la base del estándar SHA-3. Diseñado para ser liviano y fácil de usar, es ideal para aplicaciones donde se requiere un algoritmo hash seguro y de alto rendimiento en entornos con recursos limitados.  
+  * 🔧 **Características principales:**  
+    * Soporte para Keccak y SHA-3, incluyendo variantes como SHAKE (Extendable-Output Functions, XOFs).
+    * Implementación ligera y optimizada para un bajo consumo de recursos.
+    * Compatible con el estándar `no_std`, permitiendo su uso en sistemas embebidos.
+    * Fácil integración en proyectos de Rust gracias a su diseño modular y documentación clara.
+    * Mantenido por la comunidad de Rust, con un enfoque en la simplicidad y la seguridad.  
+ * 🌐 **Recursos:** 
+    - [Repositorio GitHub](https://github.com/debris/tiny-keccak)
+   
+### Poseidon
+* **Poseidon252**  
+  * 📚 **Descripción:**  
+    **Poseidon252** es una implementación altamente eficiente de la función hash Poseidon, desarrollada por el equipo de Dusk Network en Rust. Poseidon es una función hash optimizada para circuitos zk-SNARKs y zk-STARKs, utilizada principalmente en aplicaciones de criptografía avanzada, como la privacidad y las pruebas de conocimiento cero.  
+  * 🔧 **Características principales:**  
+    * Implementación de Poseidon sobre el campo escalar de 252 bits, ideal para aplicaciones basadas en criptografía de curvas elípticas y pruebas de conocimiento cero.  
+    * Diseñada para ser eficiente en circuitos ZKP, reduciendo las restricciones en las pruebas.  
+    * Compatible con el estándar `no_std`, permitiendo su uso en sistemas embebidos y entornos de recursos limitados.  
+    * Fácil integración en proyectos criptográficos que requieren hashing seguro y eficiente.  
+    * Mantenido activamente por el equipo de Dusk Network, con un enfoque en aplicaciones de privacidad y escalabilidad.  
+ * 🌐 **Recursos:**
+    - [Repositorio GitHub](https://github.com/dusk-network/poseidon252)
+ * **Poseidon2**  
+  * 📚 **Descripción:**  
+    **Poseidon2** es una implementación optimizada de la función hash Poseidon desarrollada por **Horizen Labs** en Rust. Poseidon es un algoritmo hash criptográfico diseñado específicamente para aplicaciones en pruebas de conocimiento cero (zk-SNARKs y zk-STARKs), ofreciendo una construcción eficiente en términos de restricciones en circuitos zk.  
+  * 🔧 **Características principales:**  
+    * Implementación del algoritmo Poseidon hash optimizado para su uso en circuitos zk.  
+    * Enfocado en mejorar el rendimiento y reducir el número de restricciones en pruebas de conocimiento cero.  
+    * Compatible con el estándar `no_std`, lo que permite su integración en dispositivos con recursos limitados.  
+    * Ideal para aplicaciones de privacidad y seguridad, como contratos inteligentes, identificaciones digitales y sistemas descentralizados.  
+    * Mantenido activamente por Horizen Labs, con un enfoque en aplicaciones avanzadas de criptografía.  
+ * 🌐 **Recursos:**
+    - [Repositorio GitHub](https://github.com/HorizenLabs/poseidon2)
+
+* **Poseidon**  
+  * 📚 **Descripción:**  
+    **Poseidon** es una implementación en Rust de la función hash Poseidon, diseñada por el equipo de **Privacy & Scaling Explorations**. Este algoritmo hash está optimizado para su uso en pruebas de conocimiento cero (zk-SNARKs y zk-STARKs) y aplicaciones que requieren eficiencia y seguridad criptográfica en entornos avanzados.  
+  * 🔧 **Características principales:**  
+    * Implementación de Poseidon con soporte para configuraciones altamente personalizables según el campo y el circuito zk.  
+    * Optimizaciones específicas para reducir las restricciones en circuitos zk, lo que mejora el rendimiento de las pruebas.  
+    * Diseñado para integrarse fácilmente con proyectos de criptografía avanzada y escalabilidad.  
+    * Compatible con el estándar `no_std`, permitiendo su uso en entornos embebidos o de recursos limitados.  
+    * Mantenido activamente por el equipo de Privacy & Scaling Explorations, enfocado en tecnologías de escalabilidad y privacidad.  
+   * 🌐 **Recursos:**
+    - [Repositorio GitHub](https://github.com/privacy-scaling-explorations/poseidon)
+### Password-Hashing-Functions
+* **RustCrypto/password-hashes**  
+  * 📚 **Descripción:**  
+    **RustCrypto/password-hashes** es un conjunto de implementaciones de funciones de derivación de contraseñas (Password Hashing Functions, PHFs) en Rust. Este repositorio proporciona soluciones seguras y eficientes para proteger contraseñas en aplicaciones y sistemas que requieren almacenamiento y validación de contraseñas de forma robusta.  
+  * 🔧 **Características principales:**  
+    * Implementaciones de funciones de hashing de contraseñas como Argon2, bcrypt y PBKDF2.
+    * Funciones optimizadas para ser seguras y resistentes a ataques de fuerza bruta, utilizando factores de coste ajustables para incrementar la seguridad.
+    * Compatible con el estándar `no_std`, lo que permite su uso en sistemas embebidos.
+    * Integración sencilla en proyectos de Rust, con un enfoque en la simplicidad y seguridad.
+    * Mantenido por la comunidad de RustCrypto, con un enfoque en ofrecer soluciones seguras y eficientes para el manejo de contraseñas.
+  * 🌐 **Recursos:**
+    - [Repositorio GitHub](https://github.com/RustCrypto/password-hashes/tree/master)
+
+* **rust-bcrypt**  
+  * 📚 **Descripción:**  
+    **rust-bcrypt** es una implementación de bcrypt en Rust, un algoritmo de hashing de contraseñas resistente a ataques de fuerza bruta. bcrypt es ampliamente utilizado para proteger contraseñas almacenadas, utilizando un factor de costo ajustable que aumenta el tiempo de cálculo y, por ende, la seguridad.  
+  * 🔧 **Características principales:**  
+    * Implementación de bcrypt con soporte para el ajuste del factor de costo (cost factor), lo que permite aumentar la seguridad contra ataques de diccionario y de fuerza bruta.
+    * Utiliza una sal aleatoria para cada contraseña, lo que asegura que las contraseñas idénticas tengan hashes diferentes.
+    * Interfaz sencilla y segura para la creación, verificación y comparación de hashes de contraseñas.
+    * Compatible con el estándar `no_std`, permitiendo su uso en entornos de recursos limitados o dispositivos embebidos.
+    * Mantenido activamente, con actualizaciones periódicas para garantizar su seguridad y eficiencia.
+  * 🌐 **Recursos:**
+    - [Repositorio GitHub](https://github.com/Keats/rust-bcrypt)
+
+* **phpass**  
+  * 📚 **Descripción:**  
+    **phpass** es una implementación de bcrypt y hashing de contraseñas en PHP, diseñada para ser ligera y eficiente. Utiliza el algoritmo de hashing bcrypt con una sal aleatoria para proteger las contraseñas almacenadas en sistemas PHP. Este enfoque proporciona una capa adicional de seguridad al hacer que sea mucho más difícil realizar ataques de diccionario o fuerza bruta.  
+  * 🔧 **Características principales:**  
+    * Implementación del algoritmo bcrypt para el hashing de contraseñas.
+    * Soporte para la creación y verificación de contraseñas con una sal aleatoria, lo que asegura que las contraseñas idénticas tengan hashes distintos.
+    * El factor de costo (cost factor) es configurable, lo que permite ajustar la seguridad contra ataques de fuerza bruta según la potencia computacional disponible.
+    * Mantenido activamente con mejoras periódicas para garantizar su seguridad y eficiencia.
+    * Compatible con aplicaciones PHP de cualquier tamaño, desde sitios web pequeños hasta aplicaciones de gran escala.
+  * 🌐 **Recursos:**
+    - [Repositorio GitHub](https://github.com/clausehound/phpass)
+* **RustCrypto/formats/pkcs5**  
+  * 📚 **Descripción:**  
+    **RustCrypto/formats/pkcs5** es una implementación de los estándares de formato PKCS #5 para el manejo de contraseñas en Rust. PKCS #5 define un formato para la derivación de claves de contraseñas, que es fundamental para la seguridad en la criptografía de contraseñas. Este repositorio proporciona una implementación eficiente y segura de estos formatos, incluyendo la derivación de claves utilizando funciones como PBKDF2.  
+  * 🔧 **Características principales:**  
+    * Implementación de PBKDF2, un algoritmo de derivación de claves basado en contraseñas que utiliza un enfoque de función de repetición para proteger las contraseñas contra ataques de diccionario.
+    * Compatible con el estándar `no_std`, permitiendo su uso en sistemas embebidos o entornos con recursos limitados.
+    * Proporciona una interfaz sencilla y segura para la derivación de claves a partir de contraseñas en aplicaciones Rust.
+    * Mantenido activamente por la comunidad de RustCrypto, con un enfoque en la seguridad y eficiencia de las funciones criptográficas.
+  * 🌐 **Recursos:**
+    - [Repositorio GitHub](https://github.com/RustCrypto/formats/tree/master/pkcs5)
+   
+ * **rust-argon2**  
+  * 📚 **Descripción:**  
+    **rust-argon2** es una implementación de la función de derivación de claves Argon2 en Rust. Argon2 es un algoritmo de hashing de contraseñas resistente a ataques de fuerza bruta y diseñado para ser seguro en un entorno con recursos limitados. Esta implementación está diseñada para ser eficiente, flexible y fácil de usar, permitiendo ajustar el tiempo de cálculo y el uso de memoria para aumentar la seguridad.  
+  * 🔧 **Características principales:**  
+    * Implementación del algoritmo de derivación de claves Argon2 con soporte para los tres modos de operación: Argon2d, Argon2i y Argon2id.
+    * Permite ajustar el número de iteraciones, el tamaño de memoria y el paralelismo para optimizar el uso de recursos y aumentar la seguridad.
+    * Función de "sal" aleatoria para asegurar que los hashes de contraseñas idénticas sean diferentes.
+    * Compatible con el estándar `no_std`, lo que permite su uso en entornos embebidos y con recursos limitados.
+    * Mantenido activamente por la comunidad de Rust, con un enfoque en la seguridad y la flexibilidad.
+  * 🌐 **Recursos:**
+    - [Repositorio GitHub](https://github.com/sru-systems/rust-argon2)
+
