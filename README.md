@@ -1,4 +1,4 @@
-# 🔐 **Awesome Rust Cryptography**  
+# 🔐 **Criptografía aplicable con Rust**  
 
 🌟 Una colección curada de herramientas, bibliotecas y recursos en Rust para trabajar con criptografía. ¡Explora el poder de Rust en el mundo de la seguridad y privacidad digital! 🚀  
 
@@ -37,8 +37,21 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
   * 🌐 **Recursos:**  
     - [Repositorio GitHub](https://github.com/zkonduit/ezkl)  
     - [Sitio Web](https://ezkl.xyz/)  
-    - [Documentación](https://docs.ezkl.xyz/)  
+    - [Documentación](https://docs.ezkl.xyz/)
+      
+* **Powdr**
+  * 📚 **Descripción:**Powdr es una herramienta diseñada para facilitar la construcción de máquinas virtuales de conocimiento cero (zkVMs) y marcos de prueba similares. Su objetivo principal es mejorar la productividad, seguridad y rendimiento en el desarrollo de estas tecnologías. 
 
+ * 🔧 **Características principales:**
+
+    *  Modular y extensible, ideal para construir zkVMs personalizadas.
+    *   Soporte para backends como Plonky3, Halo2 y eSTARK.
+    *   Transparencia en la compilación, con artefactos legibles e inspeccionables.
+    *   Automatización completa de la generación de pruebas y testigos.
+
+  * 🌐 **Recursos:**  
+     - [Documentación](https://docs.powdr.org/)  
+     - [Repositorio GitHub](https://github.com/powdr-labs/powdr?utm_source=chatgpt.com) 
 
 * **OpenVM**  
   * 📚 **Descripción:** Un marco zkVM modular y extensible diseñado para personalización y compatibilidad con pruebas avanzadas. Permite ejecutar programas de longitud ilimitada, realizar pruebas on-chain, y soportar extensiones como ECDSA y aritmética modular.  
