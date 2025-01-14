@@ -40,7 +40,7 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
     - [Documentación](https://docs.ezkl.xyz/)
       
 * **Powdr**
-  * 📚 **Descripción:**Powdr es una herramienta diseñada para facilitar la construcción de máquinas virtuales de conocimiento cero (zkVMs) y marcos de prueba similares. Su objetivo principal es mejorar la productividad, seguridad y rendimiento en el desarrollo de estas tecnologías. 
+  * 📚 **Descripción:** Powdr es una herramienta diseñada para facilitar la construcción de máquinas virtuales de conocimiento cero (zkVMs) y marcos de prueba similares. Su objetivo principal es mejorar la productividad, seguridad y rendimiento en el desarrollo de estas tecnologías. 
 
  * 🔧 **Características principales:**
 
