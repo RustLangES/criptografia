@@ -419,7 +419,21 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
 
   * 🌐 **Recursos:**  
     - [Repositorio GitHub](https://github.com/EspressoSystems/jellyfish)
- 
+
+* **Nova**  
+  * 📚 **Descripción:**  
+    Nova es un SNARK recursivo de alta velocidad, un sistema criptográfico que permite a un demostrador probar una afirmación matemática a un verificador con una prueba corta y verificación sucinta. Nova permite la ejecución de cálculos de manera incremental y verificable (IVC), lo que significa que un demostrador puede actualizar su prueba para incluir pasos adicionales de un cómputo sin necesidad de recalcular la verificación completa.  
+    Este enfoque tiene aplicaciones en Rollups, funciones de retardo verificables (VDF), cadenas de bloques sucintas y máquinas de estado verificables.
+
+  * 🔧 **Características principales:**  
+      - Proveedor más rápido entre los sistemas recursivos conocidos.  
+      - Circuito de verificación constante con aproximadamente 10,000 puertas de multiplicación.  
+      - Implementado con un esquema de plegado criptográfico que reduce la verificación de dos afirmaciones NP a una sola.  
+      - Aplicaciones en Rollups, VDFs, y ejecución de máquinas virtuales como EVM y RISC-V.  
+
+  * 🌐 **Recursos:**  
+      - [Repositorio GitHub](https://github.com/microsoft/Nova)  
+
 ## ZKTLS
 
 * **TLSNotary**  
