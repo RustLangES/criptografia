@@ -10,6 +10,7 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
 ---
 
 ## 🛠️ **Librerías y Proyectos Destacados**
+* [Post-Quantum](##Post-Quantum)
 * [ZKPs](##Zero-Knowledge)
   * [IA-ZKML](###IA-ZKML-ZKVM)
   * [Recurso Educativo](###Recurso-Educativo)
@@ -24,6 +25,140 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
   * [Hash Functions and Friends](###Hash-Functions-and-Friends)
   * [Poseidon](###Poseidon)
   * [Password-Hashing-Functions](###Password-Hashing-Functions)
+
+## Post-Quantum
+
+* **Liboqs-rust**  
+  * 📚 **Descripción:**  
+    Liboqs-rust es un binding de Rust para la biblioteca iboqs, desarrollada por el proyecto Open Quantum Safe. Proporciona herramientas para experimentar e integrar algoritmos de criptografía poscuántica, diseñados para resistir ataques de computación cuántica.  
+
+  * 🔧 **Características principales:**  
+      - Soporte para algoritmos de firma digital y KEMs (Key Encapsulation Mechanisms) poscuánticos.  
+      - Compatible con la biblioteca nativa en C, permitiendo una integración sencilla en proyectos basados en Rust.  
+      - Enfocado en aplicaciones experimentales y de investigación en criptografía poscuántica.  
+      - Compatible con una amplia gama de algoritmos aprobados y experimentales.  
+
+  * 🌐 **Recursos:**  
+      - [Repositorio GitHub](https://github.com/open-quantum-safe/liboqs-rust)  
+
+* **Kyber**  
+  * 📚 **Descripción:**  
+    Kyber es una implementación en Rust del algoritmo de cifrado poscuántico Kyber, que forma parte de los finalistas del proceso de estandarización de NIST para criptografía poscuántica. Este algoritmo está diseñado para proporcionar seguridad resistente a ataques de computación cuántica en la generación y el intercambio de claves.  
+
+  * 🔧 **Características principales:**  
+      - Basado en el esquema de criptografía de redes de retículas (lattice-based).  
+      - Eficiente en términos de rendimiento y uso de recursos, adecuado para aplicaciones prácticas.  
+      - Diseñado para garantizar confidencialidad y seguridad incluso frente a ataques de computación cuántica.  
+      - Implementación en Rust para aprovechar su seguridad y rendimiento.  
+
+  * 🌐 **Recursos:**  
+      - [Repositorio GitHub](https://github.com/Argyle-Software/kyber)  
+      - [Documentación](https://pq-crystals.org/kyber/)  
+
+* **Dilithium**  
+  * 📚 **Descripción:**  
+    Dilithium es una implementación en Rust del algoritmo de firma digital poscuántica CRYSTALS-Dilithium, uno de los esquemas seleccionados para estandarización por el NIST. Este esquema está basado en redes de retículas y diseñado para ofrecer seguridad frente a ataques de computación cuántica, manteniendo un equilibrio entre rendimiento, tamaño de firma y claves.  
+
+  * 🔧 **Características principales:**  
+      - Basado en criptografía de redes de retículas (lattice-based cryptography).  
+      - Seguridad resistente a computación cuántica, ideal para aplicaciones futuras.  
+      - Óptimo rendimiento en generación y verificación de firmas.  
+      - Implementación en Rust para garantizar fiabilidad y seguridad del código.  
+
+  * 🌐 **Recursos:**  
+      - [Repositorio GitHub](https://github.com/Argyle-Software/dilithium)  
+      - [Documentación](https://pq-crystals.org/dilithium/)  
+
+* **SPHINCS+**  
+  * 📚 **Descripción:**  
+    SPHINCS+ es una implementación en Rust del esquema de firma digital poscuántica SPHINCS+, diseñado para resistir ataques de computación cuántica. Este esquema se basa en árboles hash y es completamente libre de estructuras algebraicas, lo que lo hace altamente seguro y flexible para diversas aplicaciones.  
+
+  * 🔧 **Características principales:**  
+      - Basado en árboles hash (hash-based cryptography), sin estructuras algebraicas.  
+      - Seguridad resistente a computación cuántica, ideal para escenarios futuros.  
+      - Ofrece múltiples configuraciones que permiten equilibrar rendimiento, tamaño de firma y claves.  
+      - Implementación en Rust para un alto nivel de seguridad y confiabilidad.  
+
+  * 🌐 **Recursos:**  
+      - [Repositorio GitHub](https://github.com/Argyle-Software/sphincsplus)  
+      - [Documentación](https://sphincs.org/)  
+* **zkDilithium**  
+  * 📚 **Descripción:**  
+    zkDilithium es una implementación en Rust que combina el esquema de firma digital CRYSTALS-Dilithium con pruebas de conocimiento nulo  (ZKPs). Este enfoque innovador garantiza la autenticidad de las firmas mientras mantiene la privacidad de los datos, haciéndolo ideal para aplicaciones donde la confidencialidad y la seguridad son críticas.  
+
+  * 🔧 **Características principales:**  
+      - Basado en CRYSTALS-Dilithium, un esquema de firma digital resistente a ataques cuánticos.  
+      - Integra pruebas de conocimiento nulo (ZKPs) para preservar la privacidad.  
+      - Diseñado para proporcionar autenticidad y confidencialidad simultáneamente.  
+      - Implementación en Rust para aprovechar su eficiencia y seguridad.  
+
+  * 🌐 **Recursos:**  
+      - [Repositorio GitHub](https://github.com/guruvamsi-policharla/zkdilithium)
+        
+* **QuantCrypt**  
+  * 📚 **Descripción:**  
+    QuantCrypt es una implementación en Rust de una serie de algoritmos de criptografía post-cuántica, diseñada para ofrecer soluciones de seguridad resistentes a ataques de computación cuántica. La librería incluye una variedad de algoritmos criptográficos modernos adaptados para soportar las futuras amenazas que traerán las computadoras cuánticas.  
+
+  * 🔧 **Características principales:**  
+      - Soporta varios algoritmos de criptografía post-cuántica.  
+      - Diseñada para ser modular y extensible, permitiendo la integración de nuevos algoritmos.  
+      - Enfoque en rendimiento y eficiencia para aplicaciones reales.  
+      - Implementación en Rust para aprovechar su seguridad y eficiencia.  
+
+  * 🌐 **Recursos:**  
+      - [Repositorio GitHub](https://github.com/codespree/quantcrypt)
+      - 
+* **pqcrypto**  
+  * 📚 **Descripción:**  
+    pqcrypto es una librería en Rust que implementa una variedad de algoritmos criptográficos resistentes a la computación cuántica. Esta librería incluye soluciones para firmas digitales, intercambio de claves y cifrado, todas diseñadas para proteger los datos contra futuros avances en la computación cuántica.  
+
+  * 🔧 **Características principales:**  
+      - Soporta varios algoritmos de criptografía post-cuántica, incluidos cifrados y firmas.  
+      - Ofrece soluciones robustas y eficientes para escenarios que requieren alta seguridad.  
+      - Implementación en Rust, asegurando alta confiabilidad y eficiencia.  
+      - Compatible con estándares y proyectos de criptografía post-cuántica.  
+
+  * 🌐 **Recursos:**  
+      - [Repositorio GitHub](https://github.com/rustpq/pqcrypto)  
+* **Citadel Protocol**  
+  * 📚 **Descripción:**  
+    Citadel Protocol es una solución de seguridad diseñada para proteger la comunicación entre sistemas distribuidos mediante el uso de criptografía avanzada. Este protocolo se centra en la autenticación mutua, el cifrado de extremo a extremo y la protección frente a amenazas externas, con especial atención a la resistencia ante ataques cuánticos.  
+
+  * 🔧 **Características principales:**  
+      - Autenticación mutua basada en criptografía avanzada.  
+      - Cifrado de extremo a extremo para garantizar la privacidad de los datos.  
+      - Resistencia a amenazas cuánticas, asegurando la seguridad futura de las comunicaciones.  
+      - Implementación modular que permite adaptarse a diferentes entornos y requisitos de seguridad.  
+
+  * 🌐 **Recursos:**  
+      - [Repositorio GitHub](https://github.com/Avarok-Cybersecurity/Citadel-Protocol)
+* **KyberLib**  
+  * 📚 **Descripción:**  
+    KyberLib es una implementación en Rust de la biblioteca de criptografía basada en el algoritmo Kyber, uno de los algoritmos de cifrado post-cuántico más prometedores. Esta biblioteca proporciona una implementación eficiente y segura del algoritmo Kyber para aplicaciones que requieren resistencia contra los ataques de computación cuántica.  
+
+  * 🔧 **Características principales:**  
+      - Implementación eficiente del algoritmo de cifrado Kyber para un rendimiento óptimo.  
+      - Diseñado para ser resistente a los ataques de computación cuántica.  
+      - Implementación en Rust que asegura eficiencia y seguridad.  
+      - Soporte para diversas configuraciones y tamaños de clave para adaptarse a diferentes necesidades.  
+
+  * 🌐 **Recursos:**  
+      - [Repositorio GitHub](https://github.com/sebastienrousseau/kyberlib)  
+
+* **faest-rs**  
+  * 📚 **Descripción:**  
+    faest-rs es una implementación en Rust del esquema de firma FAEST (Fast and Efficient Signature Scheme). Este esquema proporciona firmas digitales eficientes y seguras, adaptadas para resistir ataques cuánticos, utilizando técnicas modernas de criptografía basada en problemas matemáticos difíciles de resolver.  
+
+  * 🔧 **Características principales:**  
+      - Basado en el esquema FAEST para firmas digitales rápidas y seguras.  
+      - Diseñado para ser resistente a los ataques de computación cuántica.  
+      - Implementación en Rust para aprovechar su eficiencia y seguridad.  
+      - Permite realizar verificaciones de firma de manera eficiente y escalable.  
+
+  * 🌐 **Recursos:**  
+      - [Repositorio GitHub](https://github.com/ait-crypto/faest-rs)  
+
+
 ## Zero-Knowledge
 📖 **¿Qué son las Pruebas de Conocimiento Cero (ZKPs)?**
 
@@ -454,16 +589,15 @@ Estos programas de MPC se compilan a bytecode para el StoffelVM, que es una máq
  * 🌐 **Recursos:**
     - [Repositorio GitHub](https://github.com/dusk-network/poseidon252)
  * **Poseidon2**  
-  * 📚 **Descripción:**  
-    **Poseidon2** es una implementación optimizada de la función hash Poseidon desarrollada por **Horizen Labs** en Rust. Poseidon es un algoritmo hash criptográfico diseñado específicamente para aplicaciones en pruebas de conocimiento cero (zk-SNARKs y zk-STARKs), ofreciendo una construcción eficiente en términos de restricciones en circuitos zk.  
-  * 🔧 **Características principales:**  
-    * Implementación del algoritmo Poseidon hash optimizado para su uso en circuitos zk.  
-    * Enfocado en mejorar el rendimiento y reducir el número de restricciones en pruebas de conocimiento cero.  
-    * Compatible con el estándar `no_std`, lo que permite su integración en dispositivos con recursos limitados.  
-    * Ideal para aplicaciones de privacidad y seguridad, como contratos inteligentes, identificaciones digitales y sistemas descentralizados.  
-    * Mantenido activamente por Horizen Labs, con un enfoque en aplicaciones avanzadas de criptografía.  
- * 🌐 **Recursos:**
-    - [Repositorio GitHub](https://github.com/HorizenLabs/poseidon2)
+   * 📚 **Descripción:** **Poseidon2** es una implementación optimizada de la función hash Poseidon desarrollada por **Horizen Labs** en Rust. Poseidon es un algoritmo hash criptográfico diseñado específicamente para aplicaciones en pruebas de conocimiento cero (zk-SNARKs y zk-STARKs), ofreciendo una construcción eficiente en términos de restricciones en circuitos zk.  
+   * 🔧 **Características principales:**  
+     * Implementación del algoritmo Poseidon hash optimizado para su uso en circuitos zk.  
+     * Enfocado en mejorar el rendimiento y reducir el número de restricciones en pruebas de conocimiento cero.  
+     * Compatible con el estándar `no_std`, lo que permite su integración en dispositivos con recursos limitados.  
+     * Ideal para aplicaciones de privacidad y seguridad, como contratos inteligentes, identificaciones digitales y sistemas descentralizados.  
+     * Mantenido activamente por Horizen Labs, con un enfoque en aplicaciones avanzadas de criptografía.  
+   * 🌐 **Recursos:**
+     - [Repositorio GitHub](https://github.com/HorizenLabs/poseidon2)
 
 * **Poseidon**  
   * 📚 **Descripción:**  
@@ -524,14 +658,13 @@ Estos programas de MPC se compilan a bytecode para el StoffelVM, que es una máq
     - [Repositorio GitHub](https://github.com/RustCrypto/formats/tree/master/pkcs5)
    
  * **rust-argon2**  
-  * 📚 **Descripción:**  
-    **rust-argon2** es una implementación de la función de derivación de claves Argon2 en Rust. Argon2 es un algoritmo de hashing de contraseñas resistente a ataques de fuerza bruta y diseñado para ser seguro en un entorno con recursos limitados. Esta implementación está diseñada para ser eficiente, flexible y fácil de usar, permitiendo ajustar el tiempo de cálculo y el uso de memoria para aumentar la seguridad.  
-  * 🔧 **Características principales:**  
-    * Implementación del algoritmo de derivación de claves Argon2 con soporte para los tres modos de operación: Argon2d, Argon2i y Argon2id.
-    * Permite ajustar el número de iteraciones, el tamaño de memoria y el paralelismo para optimizar el uso de recursos y aumentar la seguridad.
-    * Función de "sal" aleatoria para asegurar que los hashes de contraseñas idénticas sean diferentes.
-    * Compatible con el estándar `no_std`, lo que permite su uso en entornos embebidos y con recursos limitados.
-    * Mantenido activamente por la comunidad de Rust, con un enfoque en la seguridad y la flexibilidad.
-  * 🌐 **Recursos:**
-    - [Repositorio GitHub](https://github.com/sru-systems/rust-argon2)
+   * 📚 **Descripción:**  **rust-argon2** es una implementación de la función de derivación de claves Argon2 en Rust. Argon2 es un algoritmo de hashing de contraseñas resistente a ataques de fuerza bruta y diseñado para ser seguro en un entorno con recursos limitados. Esta implementación está diseñada para ser eficiente, flexible y fácil de usar, permitiendo ajustar el tiempo de cálculo y el uso de memoria para aumentar la seguridad.  
+   * 🔧 **Características principales:**  
+     * Implementación del algoritmo de derivación de claves Argon2 con soporte para los tres modos de operación: Argon2d, Argon2i y Argon2id.
+     * Permite ajustar el número de iteraciones, el tamaño de memoria y el paralelismo para optimizar el uso de recursos y aumentar la seguridad.
+     * Función de "sal" aleatoria para asegurar que los hashes de contraseñas idénticas sean diferentes.
+     * Compatible con el estándar `no_std`, lo que permite su uso en entornos embebidos y con recursos limitados.
+     * Mantenido activamente por la comunidad de Rust, con un enfoque en la seguridad y la flexibilidad.
+   * 🌐 **Recursos:**
+     - [Repositorio GitHub](https://github.com/sru-systems/rust-argon2)
 
