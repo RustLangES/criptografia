@@ -426,19 +426,19 @@ Estos programas de MPC se compilan a bytecode para el StoffelVM, que es una máq
     * Compatible con el estándar `no_std`, lo que lo hace ideal para sistemas con recursos limitados.
     * Modular y compatible con otros componentes de RustCrypto, permitiendo una integración fluida en proyectos criptográficos.
     * Mantenido activamente por la comunidad de RustCrypto, con un enfoque en la seguridad y el rendimiento.  
- * 🌐 **Recursos:** 
+  * 🌐 **Recursos:** 
     - [Repositorio GitHub](https://github.com/RustCrypto/universal-hashes)
-  
-   * **tiny-keccak**  
-  * 📚 **Descripción:**  
+
+ * **tiny-keccak**  
+   * 📚 **Descripción:**  
     **tiny-keccak** es una implementación minimalista y eficiente de la función hash Keccak en Rust, que también es la base del estándar SHA-3. Diseñado para ser liviano y fácil de usar, es ideal para aplicaciones donde se requiere un algoritmo hash seguro y de alto rendimiento en entornos con recursos limitados.  
-  * 🔧 **Características principales:**  
-    * Soporte para Keccak y SHA-3, incluyendo variantes como SHAKE (Extendable-Output Functions, XOFs).
-    * Implementación ligera y optimizada para un bajo consumo de recursos.
-    * Compatible con el estándar `no_std`, permitiendo su uso en sistemas embebidos.
-    * Fácil integración en proyectos de Rust gracias a su diseño modular y documentación clara.
+   * 🔧 **Características principales:**  
+     * Soporte para Keccak y SHA-3, incluyendo variantes como SHAKE (Extendable-Output Functions, XOFs).
+     * Implementación ligera y optimizada para un bajo consumo de recursos.
+     * Compatible con el estándar `no_std`, permitiendo su uso en sistemas embebidos.
+     * Fácil integración en proyectos de Rust gracias a su diseño modular y documentación clara.
     * Mantenido por la comunidad de Rust, con un enfoque en la simplicidad y la seguridad.  
- * 🌐 **Recursos:** 
+  * 🌐 **Recursos:** 
     - [Repositorio GitHub](https://github.com/debris/tiny-keccak)
    
 ### Poseidon
