@@ -11,6 +11,7 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
 
 ## 🛠️ **Librerías y Proyectos Destacados**
 * [Post-Quantum](##Post-Quantum)
+  * [Librerías de PQS](###Librerías de PQS)
 * [ZKPs](##Zero-Knowledge)
   * [IA-ZKML](###IA-ZKML-ZKVM)
   * [Recurso Educativo](###Recurso-Educativo)
@@ -27,7 +28,7 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
   * [Password-Hashing-Functions](###Password-Hashing-Functions)
 
 ## Post-Quantum
-
+### Librerías de PQS
 * **Liboqs-rust**  
   * 📚 **Descripción:**  
     Liboqs-rust es un binding de Rust para la biblioteca iboqs, desarrollada por el proyecto Open Quantum Safe. Proporciona herramientas para experimentar e integrar algoritmos de criptografía poscuántica, diseñados para resistir ataques de computación cuántica.  
