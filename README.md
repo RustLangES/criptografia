@@ -17,6 +17,7 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
   * [Recurso Educativo](###Recurso-Educativo)
   * [Librerías Avanzadas de ZKP](###Librerías-Avanzadas-ZKP)
   * [ZKTLS](###ZKTLS)
+  * [Tools y Proyectos](###Tools-y-Proyectos)
 * [MPC](##Secure-Multiparty-Computation)
   * [Librerias de MPC](###Librerias-de-MPC)
   * [Frameworks de MPC](##Frameworks-de-MPC)
@@ -435,7 +436,7 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
   * 🌐 **Recursos:**  
       - [Repositorio GitHub](https://github.com/microsoft/Nova)  
 
-## ZKTLS
+### ZKTLS
 
 * **TLSNotary**  
   * 📚 **Descripción:**  TLSNotary es un protocolo y herramienta de código abierto que permite realizar auditorías criptográficas de sesiones TLS, proporcionando pruebas verificables de las comunicaciones realizadas entre un cliente y un servidor sin comprometer la privacidad del cliente.    
@@ -450,6 +451,27 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
   * 🌐 **Recursos:**  
     -  [Repositorio GitHub](https://github.com/tlsnotary/tlsn)  
     - [Documentación oficial](https://docs.tlsnotary.org/)
+
+### Tools-y-Proyectos
+* **zkemail**  
+  * 📚 **Descripción:** zkemail es un proyecto centrado en garantizar la comunicación segura y privada por correo electrónico utilizando pruebas de conocimiento nulo (ZKPs).  
+  * 🔧 **Características principales:**  
+    * Comunicación por correo electrónico segura mediante métodos criptográficos avanzados.  
+    * Utiliza pruebas de conocimiento nulo para mantener la privacidad del usuario.  
+  * 🌐 **Recursos:**  
+    - [Sitio oficial](https://prove.email)  
+    - [Repositorio en GitHub](https://github.com/zkemail)  
+    - [Twitter](https://twitter.com/zkemail)  
+** **mopro**
+  * 📚 **Descripción:** Mopro es una biblioteca optimizada para pruebas de conocimiento cnulo (ZK) en dispositivos móviles. Se integra con Circom y Halo2, mejorando el rendimiento significativamente en comparación con soluciones tradicionales como `snarkjs`. Su objetivo es facilitar el desarrollo de aplicaciones ZK en plataformas móviles.
+  * 🔧 **Características principales:**  
+    * Integración con Circom y Halo2.
+    * Rendimiento optimizado para dispositivos móviles.
+    * Simplificación en el desarrollo de aplicaciones ZK.
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub de mopro](https://github.com/zkmopro/mopro)
+
+
 
 -----------
 ## Secure-Multiparty-Computation
