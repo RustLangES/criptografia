@@ -20,7 +20,7 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
 * [MPC](##Secure-Multiparty-Computation)
   * [Librerias de MPC](###Librerias-de-MPC)
   * [Frameworks de MPC](##Frameworks-de-MPC)
-  * [Frameworks de MPC](###MPC-Tools)
+  * [MPC Tools](###MPC-Tools)
 * [FHE](##Fully-Homomorphic-Encryption)
   * [Librerias de FHE](###Librerias-de-FHE)
 * [Hash Function](##Hash-Function)
@@ -472,6 +472,23 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
   * 🌐 **Recursos:**  
      - [Repositorio GitHub de smol-mpc](https://github.com/hashcloak/smol-mpc)  
      - [Documentación](https://docs.rs/smol-mpc/)
+
+* **MPZ**  
+  * 📚 **Descripción:**   MPZ es una colección de bibliotecas de computación multipartita (MPC) escritas en Rust 🦀. El proyecto tiene como objetivo proporcionar software MPC seguro, eficiente, modular y portátil, con un enfoque en la usabilidad.
+
+  * ⚠️ **Aviso:**  Este proyecto está en desarrollo activo y no debe utilizarse en producción. Puede haber errores y cambios importantes frecuentes. Úselo bajo su propio riesgo.
+
+  * 🔧 **Características principales:**  
+    * Implementación de primitivas base para computación segura en entornos descentralizados.
+
+    * DSL para crear circuitos booleanos de manera declarativa, diseñado para computación multipartita.
+
+    * Implementación de protocolos OT fundamentales para garantizar la privacidad en operaciones de computación segura.
+
+    * Soporte para conversiones eficientes entre diferentes tipos de compartidos para operaciones seguras.
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/privacy-scaling-explorations/mpz)  
+   
 
 ### Frameworks-de-MPC
    
