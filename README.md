@@ -11,7 +11,7 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
 
 ## 🛠️ **Librerías y Proyectos Destacados**
 * [Post-Quantum](##Post-Quantum)
-  * [Librerías de PQS](###Librerías de PQS)
+  * [Librerías de PQS](###Librerías-de-PQS)
 * [ZKPs](##Zero-Knowledge)
   * [IA-ZKML](###IA-ZKML-ZKVM)
   * [Recurso Educativo](###Recurso-Educativo)
