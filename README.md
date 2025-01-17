@@ -20,6 +20,7 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
 * [MPC](##Secure-Multiparty-Computation)
   * [Librerias de MPC](###Librerias-de-MPC)
   * [Frameworks de MPC](##Frameworks-de-MPC)
+  * [Frameworks de MPC](###MPC-Tools)
 * [FHE](##Fully-Homomorphic-Encryption)
   * [Librerias de FHE](###Librerias-de-FHE)
 * [Hash Function](##Hash-Function)
@@ -486,6 +487,22 @@ Estos programas de MPC se compilan a bytecode para el StoffelVM, que es una máq
   * 🌐 **Recursos:**  
     - [Repositorio GitHub](https://github.com/hashcloak/stoffelMPC)  
 --------------------- 
+
+### MPC_Tools
+
+* **Garble-lang**  
+  * 📚 **Descripción:** Garble-lang es un lenguaje de programación simple especializado en la computación segura y en la ejecución de cálculos sobre datos cifrados utilizando circuitos garbled. Su objetivo es permitir que los desarrolladores implementen aplicaciones privadas mediante computación multipartita (MPC), protegiendo la privacidad de los datos sin necesidad de descifrarlos.  
+  * 🔧 **Características principales:**  
+    * Lenguaje de alto nivel para construir y ejecutar circuitos de computación garbled.  
+    * Permite realizar cálculos de manera segura sobre datos cifrados, sin revelar información sensible.  
+    * Facilita la creación de aplicaciones que requieren privacidad, como contratos inteligentes y análisis de datos privados.  
+    * Proporciona herramientas para la integración con otros protocolos de computación segura y privacidad.  
+    * Ofrece un marco eficiente para la implementación de MPC.
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/sine-fdn/garble-lang)  
+    - [Documentación](https://garble-lang.org)
+
+
 ## Fully-Homomorphic-Encryption
 ---------------------
 ### Librerias-de-FHE
