@@ -10,7 +10,7 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
 ---
 
 ## 🛠️ **Librerías y Proyectos Destacados**
-* [Post-Quantum](https://github.com/RustLangES/criptografia/edit/main/README.md#post-quantum)
+* [Post-Quantum](https://github.com/RustLangES/criptografia/blob/main/README.md#post-quantum)
   * [Librerías de PQS](###Librerías-de-PQS)
 * [ZKPs](##Zero-Knowledge)
   * [IA-ZKML](###IA-ZKML-ZKVM)
