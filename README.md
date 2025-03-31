@@ -191,6 +191,17 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
   *  **🌐 Recursos:**
      * [Repositorio GitHub](https://github.com/worldfnd/ProveKit) 
 
+* **Mopro**
+  * **📚 Descripción:** Mopro es una biblioteca de código abierto diseñada para facilitar la integración de pruebas criptográficas avanzadas en aplicaciones móviles. Desarrollada por zkMoPro, esta herramienta permite a los desarrolladores implementar pruebas de conocimiento cero (ZKP) de manera eficiente, protegiendo datos sensibles y habilitando computaciones seguras sin comprometer la privacidad, con un enfoque especial en plataformas móviles como iOS y Android.
+  * **🔧 Características principales:**
+    * Soporte para la generación y verificación de pruebas de conocimiento cero (Zero-Knowledge Proofs) en dispositivos móviles.
+    * Integración optimizada para plataformas móviles, con bindings en Rust y compatibilidad con iOS/Android.
+    * Herramientas de alto nivel para construir aplicaciones con privacidad garantizada en entornos móviles.
+    * Enfocado en rendimiento y seguridad, aprovechando la potencia de lenguajes como Rust.
+    * Documentación detallada y ejemplos para facilitar su adopción en proyectos reales.
+  * **🌐 Recursos:**
+    * [Repositorio GitHub](https://github.com/zkmopro/mopro)
+    * [Documentación](https://zkmopro.org/docs/intro)
 
 * **Powdr**
   * 📚 **Descripción:** Powdr es una herramienta diseñada para facilitar la construcción de máquinas virtuales de conocimiento cero (zkVMs) y marcos de prueba similares. Su objetivo principal es mejorar la productividad, seguridad y rendimiento en el desarrollo de estas tecnologías. 
