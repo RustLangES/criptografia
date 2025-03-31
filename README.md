@@ -179,16 +179,28 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
     - [Repositorio GitHub](https://github.com/zkonduit/ezkl)  
     - [Sitio Web](https://ezkl.xyz/)  
     - [Documentación](https://docs.ezkl.xyz/)
-      
+
+* **ProveKit (WorldCoin)**
+  *  **📚 Descripción:** ProveKit es una herramienta de código abierto diseñada para facilitar la implementación y verificación de pruebas criptográficas avanzadas. Desarrollada por World Foundation, esta biblioteca tiene como objetivo simplificar la creación de sistemas seguros que utilicen técnicas como pruebas de conocimiento cero (ZKP) o circuitos garbled, permitiendo a los desarrolladores proteger datos sensibles y validar computations sin comprometer la privacidad.
+  *  **🔧 Características principales:**
+     * Soporte para la generación y verificación de pruebas de conocimiento cero (Zero-Knowledge Proofs).
+     * Integración con protocolos de computación multipartita (MPC) para cálculos seguros.
+     * Herramientas de alto nivel para construir aplicaciones con privacidad garantizada.
+     * Compatible con lenguajes como Rust o Python, enfocado en rendimiento y seguridad.
+     * Documentación detallada para facilitar su adopción en proyectos reales.
+  *  **🌐 Recursos:**
+     * [Repositorio GitHub](https://github.com/worldfnd/ProveKit) 
+
+
 * **Powdr**
   * 📚 **Descripción:** Powdr es una herramienta diseñada para facilitar la construcción de máquinas virtuales de conocimiento cero (zkVMs) y marcos de prueba similares. Su objetivo principal es mejorar la productividad, seguridad y rendimiento en el desarrollo de estas tecnologías. 
 
- * 🔧 **Características principales:**
+  * 🔧 **Características principales:**
 
-    *  Modular y extensible, ideal para construir zkVMs personalizadas.
-    *   Soporte para backends como Plonky3, Halo2 y eSTARK.
-    *   Transparencia en la compilación, con artefactos legibles e inspeccionables.
-    *   Automatización completa de la generación de pruebas y testigos.
+     *  Modular y extensible, ideal para construir zkVMs personalizadas.
+     *   Soporte para backends como Plonky3, Halo2 y eSTARK.
+     *   Transparencia en la compilación, con artefactos legibles e inspeccionables.
+     *   Automatización completa de la generación de pruebas y testigos.
 
   * 🌐 **Recursos:**  
      - [Documentación](https://docs.powdr.org/)  
