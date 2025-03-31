@@ -541,6 +541,18 @@ Estos programas de MPC se compilan a bytecode para el StoffelVM, que es una máq
     - [Repositorio GitHub](https://github.com/sine-fdn/garble-lang)  
     - [Documentación](https://garble-lang.org)
 
+- Tandem
+
+  - **📚 Descripción:** Tandem es un motor de computación multipartita (MPC) de código abierto, seguro y maliciosamente robusto, diseñado para ser integrable y accesible. Su objetivo es permitir que las empresas y desarrolladores realicen cálculos colaborativos sobre datos cifrados utilizando circuitos garbled, protegiendo la privacidad sin necesidad de revelar la información subyacente. Desarrollado por la SINE Foundation, Tandem transforma los datos sensibles en oportunidades de valor mediante criptografía avanzada.
+    - **🔧 Características principales:**
+    - Motor de alto rendimiento para ejecutar circuitos garbled en computación bipartita segura.
+    - Permite cálculos sobre datos cifrados sin comprometer la privacidad de las partes involucradas.
+    - Facilita aplicaciones prácticas que requieren confidencialidad, como análisis de datos conjuntos y colaboración segura entre organizaciones.
+    - Incluye herramientas como un servidor HTTP, un cliente CLI y soporte para WebAssembly, además de integración con Garble, un lenguaje de alto nivel para MPC.
+    - Ofrece un marco eficiente y fácil de usar para implementar computación multipartita en escenarios reales.
+  - **🌐 Recursos:**
+    - [Repositorio GitHub](https://github.com/sine-fdn/tandem)
+    - [Sitio web de SINE Foundation](https://sine.foundation/tandem)
 
 ## Fully-Homomorphic-Encryption
 ---------------------
