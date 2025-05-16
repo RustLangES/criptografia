@@ -13,7 +13,7 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
 * [Post-Quantum](https://github.com/RustLangES/criptografia/blob/main/README.md#post-quantum)
   * [Librerías de PQS](https://github.com/RustLangES/criptografia/blob/main/README.md#librer%C3%ADas-de-pqs)
 * [ZKPs](https://github.com/RustLangES/criptografia/blob/main/README.md#zero-knowledge)
-  * [IA-ZKML](https://github.com/RustLangES/criptografia/blob/main/README.md#ia-zkml-zkvm)
+  * [IA-ZKML-ZKVM](https://github.com/RustLangES/criptografia/blob/main/README.md#ia-zkml-zkvm)
   * [Recurso Educativo](https://github.com/RustLangES/criptografia/blob/main/README.md#recurso-educativo)
   * [Librerías Avanzadas de ZKP](https://github.com/RustLangES/criptografia/blob/main/README.md#librer%C3%ADas-avanzadas-de-zkp)
   * [ZKTLS](https://github.com/RustLangES/criptografia/blob/main/README.md#zktls)
@@ -313,6 +313,47 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
      - [Repositorio GitHub](https://github.com/succinctlabs/sp1)  
      - [Documentación oficial](https://docs.succinct.xyz/docs/introduction)  
 
+* **Delphinus zkWasm**  
+  * 📚 **Descripción:** zkWasm es una infraestructura desarrollada por Delphinus Lab que permite ejecutar programas WebAssembly (WASM) con verificación mediante pruebas de conocimiento cero. Combina la flexibilidad de WASM con la seguridad criptográfica de las zk-SNARKs, permitiendo validaciones off-chain eficientes y seguras dentro del ecosistema blockchain. Está orientado a facilitar el desarrollo de zkDApps y a mejorar la escalabilidad de aplicaciones descentralizadas complejas.  
+  * 🔧 **Características principales:**  
+    * Ejecución de programas WebAssembly (WASM) con verificación criptográfica.  
+    * Uso de pruebas de conocimiento cero (zk-SNARKs) para validar cálculos fuera de la cadena.  
+    * Soporte para múltiples lenguajes a través de compilación a WASM.  
+    * Enfoque modular para integrarse con diferentes blockchains.  
+    * Infraestructura optimizada para construir zkDApps de alto rendimiento.  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub](https://github.com/DelphinusLab/zkWasm)  
+     - [Sitio web oficial](https://www.delphinuslab.com/)  
+   
+
+* **zkMIPS (ZKM)**  
+  * 📚 **Descripción:** ZKM es una infraestructura general de cómputo verificable basada en la microarquitectura MIPS y en el sistema de pruebas de conocimiento cero **Plonky2**. Su objetivo es empoderar a Ethereum como capa de asentamiento global, permitiendo ejecutar programas complejos en lenguajes como Go y Rust y verificar su ejecución de forma eficiente mediante zk-SNARKs. ZKM facilita tanto la generación local de pruebas como el uso de una red de prueba dedicada (demo), con verificación compatible con la EVM para integraciones blockchain.  
+  * 🔧 **Características principales:**  
+    * Infraestructura de cómputo verificable construida sobre MIPS y Plonky2.  
+    * Soporte para generación de pruebas en programas escritos en Go y Rust.  
+    * Opciones de prueba local o a través de una red de pruebas (Proving Network).  
+    * Plantilla de proyecto para generar pruebas compatibles con EVM y contratos de verificación on-chain.  
+    * Integración directa con blockchains como Ethereum (ej. Sepolia).  
+    * Proyecto en desarrollo activo con guías detalladas para pruebas y despliegue.  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub](https://github.com/zkMIPS/zkm)  
+     - [Sitio web oficial / Registro](https://www.zkm.io/apply)  
+     - [Guía de pruebas y documentación](https://docs.zkm.io/introduction/)  
+
+* **Polygon ZisK**  
+  * 📚 **Descripción:** ZisK es una máquina virtual de conocimiento cero (zkVM) desarrollada por Polygon, diseñada para ejecutar programas arbitrarios de forma verificable y sin confianza. Basada en tecnología zk avanzada como Plonky3 y sobre arquitectura RISC-V, ZisK permite a los desarrolladores generar y verificar pruebas criptográficas con eficiencia y flexibilidad. Está escrita principalmente en Rust y se enfoca en la facilidad de integración de pruebas ZK en aplicaciones escalables y privadas. Actualmente se encuentra en desarrollo activo y no debe utilizarse aún en entornos de producción.  
+  * 🔧 **Características principales:**  
+    * zkVM de alto rendimiento enfocada en pruebas verificables de programas arbitrarios.  
+    * Soporte principal para Rust, con planes para añadir otros lenguajes.  
+    * Basada en arquitectura RISC-V y tecnología Plonky3 para pruebas succinctas.  
+    * Entorno de desarrollo amigable para integrar ZK en aplicaciones descentralizadas.  
+    * Licenciamiento dual: Apache 2.0 o MIT.  
+    * Proyecto en desarrollo activo — aún no apto para producción.  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub](https://github.com/0xPolygonHermez/zisk)  
+     - [Documentación oficial](https://0xpolygonhermez.github.io/zisk/)  
+      
+
 
 ### Recurso-Educativo
 ------
@@ -323,6 +364,8 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
      * Construcción paso a paso en Rust.  
   *  🌐 **Recursos:**  
       * [Repositorio GitHub](https://koukyosyumei.github.io/MyZKP/index.html)
+
+
 
 
 ### Librerías Avanzadas de ZKP
