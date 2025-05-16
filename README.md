@@ -265,15 +265,6 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
      - [Sitio web](https://olavm.org/)
      - [Repositorio Github](https://github.com/Sin7Y/olavm)
 
-* **Tritron VM**  
-  * 📚 **Descripción:** Triton VM es una máquina virtual de conocimiento cero diseñada para maximizar la eficiencia de las pruebas criptográficas. Ideal para aplicaciones que requieren operaciones rápidas y escalables.  
-  * 🔧 **Características principales:**  
-    * Optimización para pruebas criptográficas de alta velocidad.  
-    * Arquitectura modular y personalizable.  
-    * Compatible con diversos entornos blockchain.  
-  * 🌐 **Recursos:**  
-     - [Repositorio GitHub](https://github.com/TritonVM/triton-vm)  
-
 * **Risc0**  
   * 📚 **Descripción:** Risc0 es una máquina virtual de propósito general basada en RISC-V que integra tecnología ZK para pruebas de conocimiento cero. Es ideal para ejecutar programas con privacidad avanzada en cualquier contexto.  
   * 🔧 **Características principales:**  
@@ -291,15 +282,6 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
     * Arquitectura avanzada para soportar múltiples casos de uso blockchain.  
   * 🌐 **Recursos:**  
      - [Repositorio GitHub](https://github.com/0xPolygonMiden/miden-vm)  
-
-* **Valida**  
-  * 📚 **Descripción:** Valida es una máquina virtual de conocimiento cero con un frontend basado en LLVM. Está diseñada para facilitar la construcción de pruebas ZK de manera eficiente y accesible para desarrolladores.  
-  * 🔧 **Características principales:**  
-    * Integración con LLVM para soporte avanzado de compilación.  
-    * Compatible con múltiples lenguajes y entornos de desarrollo.  
-    * Ideal para aplicaciones que requieren verificación criptográfica flexible.  
-  * 🌐 **Recursos:**  
-     - [Repositorio GitHub](https://github.com/delendum-xyz/valida)
    
 * **Succinct SP1**  
   * 📚 **Descripción:** SP1 es un sistema desarrollado por Succinct Labs que permite ejecutar máquinas virtuales completas dentro de contratos inteligentes de Ethereum, utilizando tecnología de pruebas de conocimiento cero para verificar la ejecución fuera de la cadena. Está diseñado para optimizar la computación dentro del ecosistema blockchain, proporcionando soluciones eficientes para aplicaciones complejas.  
@@ -353,6 +335,125 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
      - [Repositorio GitHub](https://github.com/0xPolygonHermez/zisk)  
      - [Documentación oficial](https://0xpolygonhermez.github.io/zisk/)  
       
+* **Valida**  
+  * 📚 **Descripción:** Valida es una zkVM (máquina virtual de conocimiento cero) diseñada por [Lita.xyz](https://github.com/lita-xyz) para ejecutar y probar programas escritos en Rust, C y WASM con pruebas de ejecución verificables. Provee una toolchain LLVM personalizada y soporta pruebas dentro del navegador vía WebAssembly. Aunque está en una fase **alpha**, Valida destaca por su versatilidad multilenguaje, compatibilidad multiplataforma (x86 y ARM64 vía Docker), y soporte para pruebas aceleradas de hash (Keccak, SHA256, etc.).  
+  * 🔧 **Características principales:**  
+    * Compilación y pruebas de ejecución para programas en **Rust**, **C** y **WebAssembly**.  
+    * Pruebas verificables en navegador mediante el API `valida-basic-api-wasm`.  
+    * Toolchain basada en LLVM con `cargo +valida`, `valida run`, `valida prove`, `valida verify`.  
+    * Soporte parcial de `libc`, y compatibilidad con Keccak acelerado (vía crate personalizado).  
+    * Instalación mediante **Docker** (recomendada para ARM64 y plataformas no x86), o binarios para x86_64 Linux.  
+    * Limitaciones actuales: sin soporte para multihilo, sin acceso a sistema de archivos/red, y prueba aún **no completamente sonora** (el verificador aún puede aceptar pruebas incorrectas).  
+  * 🌐 **Recursos:**  
+     - [Repositorio GitHub](https://github.com/lita-xyz/valida-releases)  
+     - [Ejemplos en Rust y C](https://github.com/lita-xyz/rust-examples)  
+     - [Última versión (v0.9.0-alpha)](https://github.com/lita-xyz/valida-releases/releases)  
+
+* **Triton VM**  
+  * 📚 **Descripción:** Triton VM es una máquina virtual Turing completa diseñada para trabajar con pruebas de integridad computacional basadas en STARKs, utilizando Algebraic Execution Tables (AET) y Arithmetic Intermediate Representations (AIR). Permite ejecutar programas junto con la generación y verificación eficiente de pruebas criptográficas que garantizan la corrección de la ejecución. Su característica más destacada es la capacidad de realizar verificaciones recursivas rápidas de pruebas STARK, facilitando la construcción de sistemas de confianza escalables y composables.  
+  * 🔧 **Características principales:**  
+    * ISA Turing completa con aritmética para STARKs mediante AET y AIR.  
+    * Verificación recursiva eficiente de pruebas de integridad computacional STARK.  
+    * Interfaces para usar mediante CLI, TUI o como biblioteca con ejemplos.  
+    * Implementación en Rust, con dependencia en la librería criptográfica `twenty-first`.  
+    * Documentación disponible como mdBook auto-hostable.  
+    * Proyecto en desarrollo, con la ISA estable pero no recomendada para producción aún.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/TritonVM/triton-vm)  
+    - [Crate en crates.io](https://crates.io/crates/triton-vm)  
+
+* **Pico**  
+  * 📚 **Descripción:** Pico es una zkVM open-source que combina circuitos especializados con una arquitectura modular para crear pruebas de conocimiento cero personalizadas y eficientes.  
+  * 🔧 **Características principales:**  
+    * Soporta múltiples backends de pruebas para optimizar rendimiento.  
+    * Permite integrar circuitos específicos para acelerar cálculos.  
+    * Compatible con fases RISCV, RECURSION y EVM usando STARK en KoalaBear y BabyBear.  
+  * ⚠️ **Estado:** No auditado, no recomendado para producción (febrero 2025).  
+  * 🤝 **Contribuciones:** Bienvenidas, con guía disponible en el repositorio.  
+  * 🌐 **Recursos:**  
+    - [GitHub](https://github.com/brevis-network/pico)
+   
+  * **Nexus zkVM**  
+  * 📚 **Descripción:** Nexus zkVM es una máquina virtual de conocimiento cero (zkVM) modular, extensible y optimizada para la generación de pruebas, escrita en Rust y enfocada en rendimiento y seguridad. Desarrollada con la colaboración de StarkWare, es totalmente abierta y especificada públicamente, sin código propietario ni ofuscación.  
+  * 🔧 **Características principales:**  
+    * Arquitectura modular con componentes aislados y optimizados.  
+    * Configuración predeterminada segura y eficiente para la mayoría de los casos.  
+    * Extensible para soportar nuevos lenguajes, precompilados y métodos de prueba sin bloqueo de proveedor.  
+    * Transparencia y seguridad garantizadas mediante especificaciones abiertas y análisis riguroso.  
+  * ⚠️ **Estado:** Experimental, no recomendada para producción actualmente.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/nexus-xyz/nexus-zkvm)  
+    - [Documentación oficial](https://docs.nexus.xyz)
+   
+   * **Miden VM**  
+  * 📚 **Descripción:** Miden VM es una máquina virtual basada en STARK escrita en Rust que genera automáticamente pruebas zk-STARK de la ejecución de programas, permitiendo verificar su corrección sin necesidad de reejecutarlos ni conocer el código fuente.  
+  * 🔧 **Características principales:**  
+    * Máquina virtual Turing-completa con soporte para control de flujo, bucles y subrutinas.  
+    * Ejecución en múltiples contextos aislados con memoria dedicada.  
+    * Operaciones nativas con enteros de 32 bits y funciones criptográficas integradas (Rescue Prime Optimized).  
+    * Soporte para nondeterminismo y hosts personalizables para conectar con fuentes externas de datos.  
+    * Biblioteca estándar optimizada y soporte para bibliotecas externas.  
+    * Generación de pruebas STARK paralelizable para acelerar la prueba de ejecución.  
+  * ⚠️ **Estado:** En etapa alpha, no auditada ni lista para producción.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/0xMiden/miden-vm)  
+    - [Documentación oficial](https://0xmiden.github.io/miden-vm/)  
+
+* **Jolt**  
+  * 📚 **Descripción:** Jolt es una zkVM para RISC-V diseñada para ser la más simple, rápida y extensible de su tipo. Implementa el conjunto de instrucciones Base Integer de 32 bits (RV32I). El proyecto está en etapa alpha y no es apto para producción.  
+  * 🔧 **Características principales:**  
+    * zkVM basada en RISC-V, con un diseño enfocado en simplicidad y rendimiento.  
+    * Implementación modular con soporte para aceleración CUDA vía la característica `icicle`.  
+    * Perfila rendimiento con herramientas como tracing_chrome y soporta benchmarking continuo.  
+    * Comunidad abierta para contribuciones, con documentación completa y guía de inicio rápido.  
+  * ⚠️ **Estado:** Alpha, sin auditoría y no recomendada para producción.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/a16z/jolt)  
+    - [Documentación oficial (The Jolt Book)](https://jolt.a16zcrypto.com/)
+   
+  * **eigen-zkvm**  
+  * 📚 **Descripción:** eigen-zkvm es una zkVM basada en un sistema de pruebas en capas que permite escribir aplicaciones de conocimiento cero con pruebas que no requieren configuración confiable, mantienen un tamaño constante de prueba en la cadena, y reducen costos de gas. Además genera verificadores Solidity.  
+  * 🔧 **Características principales:**  
+    * Soporte para múltiples sistemas de pruebas: STARK, PLONK y Groth16 a través de la CLI universal `zkit`.  
+    * Soporte para Circom 2.x.  
+    * Composición de pruebas: agregación y recursión sobre pruebas STARK.  
+    * Recursión de pruebas Snark sobre STARK.  
+    * Generación automática de verificadores Solidity.  
+    * Aceleración por GPU para generación de pruebas (no open source).  
+    * Basada en la ISA RISC-V.  
+  * ⚠️ **Estado:** Activo pero experimental.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/0xEigenLabs/eigen-zkvm)  
+
+* **Ceno**  
+  * 📚 **Descripción:** Ceno es una máquina virtual de conocimiento cero acelerada (zkVM) para RISC-V, basada en un sistema de pruebas no uniforme y segmentado, utilizando el protocolo GKR. Está desarrollada en Rust y orientada a la paralelización y optimización del proceso de pruebas.  
+  * 🔧 **Características principales:**  
+    * Máquina virtual zk basada en RISC-V con soporte para ejecución paralela y segmentada.  
+    * Protocolo GKR para generación de pruebas no uniformes.  
+    * Ejemplos prácticos para pruebas end-to-end, incluyendo cálculos clásicos como Fibonacci.  
+    * Construida en Rust con herramientas modernas (cargo-make, rustup) para desarrollo y testing.  
+    * Proyecto en desarrollo, no recomendado para producción.  
+  * ⚠️ **Estado:** En construcción, no apto para producción.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/scroll-tech/ceno)  
+ 
+ * **PetraVM**  
+  * 📚 **Descripción:** PetraVM es una máquina virtual de propósito general diseñada para ser verificada de forma sucinta usando el sistema de pruebas Binius. Su modelo de ejecución e ISA están optimizados para pruebas eficientes con Binius, soportando verificación recursiva, cómputo general mediante WebAssembly, y computación verificable de alto rendimiento con un lenguaje propio llamado PetraML.  
+  * 🔧 **Características principales:**  
+    * Operaciones binarias y aritméticas en campo binario.  
+    * Modelo de memoria write-once (VROM).  
+    * Soporte eficiente para recursión.  
+    * Conjunto de instrucciones modular con extensiones opcionales.  
+    * Soporte para llamadas de función, control de flujo y operaciones lógicas y de comparación.  
+    * Ejemplos incluidos: cálculo de Fibonacci y conjetura de Collatz.  
+    * Proceso activo de desarrollo con soporte creciente para instrucciones.  
+  * ⚠️ **Estado:** Activo en desarrollo. No todas las instrucciones tienen soporte completo aún.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/PetraProver/PetraVM)  
+    - [Especificación completa](https://petraprover.github.io/PetraVM/specification.html)  
+
+
+
 
 
 ### Recurso-Educativo
@@ -364,7 +465,6 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
      * Construcción paso a paso en Rust.  
   *  🌐 **Recursos:**  
       * [Repositorio GitHub](https://koukyosyumei.github.io/MyZKP/index.html)
-
 
 
 
@@ -501,6 +601,19 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
 
   * 🌐 **Recursos:**  
       - [Repositorio GitHub](https://github.com/microsoft/Nova)  
+
+* **Kimchi**  
+  * 📚 **Descripción:** Kimchi es un sistema de pruebas de conocimiento cero (ZKP) diseñado para garantizar que los programas se ejecutan correctamente. Es parte del proyecto Mina y permite crear pruebas compactas y rápidas para verificar cálculos complejos sin revelar información.  
+  * 🔧 **Características principales:**  
+    * Pruebas rápidas y verificaciones eficientes.  
+    * Basado en tecnología criptográfica avanzada (curvas elípticas Pasta).  
+    * Modular, con varios componentes para hashing, compromisos polinomiales y más.  
+  * ⚠️ **Advertencia:** El proyecto está en desarrollo, no ofrece garantía de estabilidad y necesita auditorías para usarse en producción.  
+  * 🤝 **Contribuciones:** Abiertas para desarrolladores interesados.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/o1-labs/proof-systems)   
+ 
+
 
 ### ZKTLS
 
