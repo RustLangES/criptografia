@@ -625,6 +625,18 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
   * 🌐 **Recursos:**  
     - [Repositorio GitHub](https://github.com/lattirust)
 
+* **ZK-Garage**  
+  * 📚 **Descripción:** ZK-Garage es una implementación de Plonk en Rust del sistema de pruebas de conocimiento cero (ZKP) que utiliza el backend de arkworks. Permite la construcción de pruebas eficientes y flexibles, aprovechando puertas personalizadas y lookups para mejorar el rendimiento y reducir la cantidad de restricciones necesarias.  
+  * 🔧 **Características principales:**  
+    * Compatible con múltiples curvas criptográficas gracias a la integración con arkworks.  
+    * Soporte para puertas personalizadas y lookups, optimizando la generación de pruebas.  
+    * Módulo `plonk-hashing` con implementación optimizada del hash Poseidon y planificada inclusión de otros algoritmos como Reinforced Concrete y Blake2s.  
+    * Documentación detallada en `plonk-book`, que explica el funcionamiento interno del sistema y las características específicas de PLONK.  
+    * Opciones de compilación que permiten habilitar paralelización (`parallel`), ensamblado en línea (`asm`) y herramientas de depuración de circuitos (`trace`, `trace-print`).  
+  * ⚠️ **Advertencia:** El proyecto está en desarrollo activo. Aunque ya es funcional, puede estar sujeto a cambios y se recomienda precaución al utilizarlo en entornos de producción.  
+  * 🤝 **Contribuciones:** Abiertas a desarrolladores interesados. Se puede colaborar a través de GitHub y unirse al canal de Discord para discusiones y soporte.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/ZK-Garage/plonk)  
 
 ### ZKTLS
 
