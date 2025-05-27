@@ -613,6 +613,17 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
   * 🌐 **Recursos:**  
     - [Repositorio GitHub](https://github.com/o1-labs/proof-systems)   
  
+* **Lattirust**  
+  * 📚 **Descripción:** Lattirust es una colección de bibliotecas escritas en Rust para construir y experimentar con pruebas de conocimiento cero y argumentos sucintos basados en retículas (lattices). Está enfocado en la criptografía post-cuántica y busca ser una plataforma modular y extensible para investigación y desarrollo.  
+  * 🔧 **Características principales:**  
+    * Implementación de estructuras algebraicas compatibles con arkworks.  
+    * Herramientas para estimar la seguridad de problemas de retículas.  
+    * Esquemas de pruebas como LaBRADOR y Lova basados en retículas.  
+    * Arquitectura modular con múltiples crates reutilizables.  
+  * ⚠️ **Advertencia:** Proyecto en desarrollo activo. Puede estar sujeto a cambios frecuentes y no se recomienda aún para entornos de producción sin auditorías.  
+  * 🤝 **Contribuciones:** Abierto a contribuciones. Mantenido por Christian Knabenhans (EPFL).  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/lattirust)
 
 
 ### ZKTLS
