@@ -447,12 +447,25 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
     * Soporte para llamadas de función, control de flujo y operaciones lógicas y de comparación.  
     * Ejemplos incluidos: cálculo de Fibonacci y conjetura de Collatz.  
     * Proceso activo de desarrollo con soporte creciente para instrucciones.  
-  * ⚠️ **Estado:** Activo en desarrollo. No todas las instrucciones tienen soporte completo aún.  
-  * 🌐 **Recursos:**  
+   * ⚠️ **Estado:** Activo en desarrollo. No todas las instrucciones tienen soporte completo aún.  
+   * 🌐 **Recursos:**  
     - [Repositorio GitHub](https://github.com/PetraProver/PetraVM)  
     - [Especificación completa](https://petraprover.github.io/PetraVM/specification.html)  
 
 
+* **zkSync Airbender**  
+  * 📚 **Descripción:** zkSync Airbender es un conjunto de herramientas de compilación y pruebas para programas RISC-V dentro del ecosistema zkSync. Incluye implementaciones de circuitos ZK para RISC-V, un simulador RISC-V, y utilidades para la generación de testigos, creación de pruebas de conocimiento cero y su verificación.  
+  * 🔧 **Características principales:**  
+    * Compilación y ejecución de programas en una arquitectura RISC-V simulada.  
+    * Circuitos personalizados para pruebas de conocimiento cero.  
+    * Herramientas CLI para flujos de trabajo end-to-end (desde código fuente hasta verificación).  
+    * Ejemplos prácticos y documentación detallada para desarrolladores.  
+    * Política de seguridad y contribución claramente definida.  
+    * Licencia dual: Apache 2.0 y MIT.  
+  * ⚠️ **Estado:** Activo y mantenido. Se alienta a contribuir según la política del repositorio.  
+  * 🌐 **Recursos:**  
+    - [Repositorio GitHub](https://github.com/matter-labs/zksync-airbender)  
+ 
 
 
 
