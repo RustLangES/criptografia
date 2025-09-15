@@ -439,7 +439,633 @@ With these resources, you can dive into the exciting world of cryptography and z
   * ⚠️ **Status:** Under construction, not suitable for production.  
   * 🌐 **Resources:**  
     - [GitHub Repository](https://github.com/scroll-tech/ceno)  
- 
- * **PetraVM**  
-  * 📚 **Description:** PetraVM is a general-purpose virtual machine designed to be succinctly verified using the Binius proof system. Its execution model and ISA are optimized for efficient proofs with Binius, supporting recursive verification, general computation through WebAssembly, and high-performance verifiable computation with a proprietary language called PetraML.  
-  * 🔧
+
+* **PetraVM**  
+  * 📚 **Description:** PetraVM is a general-purpose virtual machine designed for succinct verification using the Binius proof system. Its execution model and ISA are optimized for efficient Binius proofs, supporting recursive verification, general computation via WebAssembly, and high-performance verifiable computing with its own language called PetraML.  
+  * 🔧 **Key features:**  
+    * Binary and arithmetic operations in binary field.  
+    * Write-once memory model (VROM).  
+    * Efficient recursion support.  
+    * Modular instruction set with optional extensions.  
+    * Support for function calls, control flow, and logical/comparison operations.  
+    * Included examples: Fibonacci calculation and Collatz conjecture.  
+    * Active development with growing instruction support.  
+  * ⚠️ **Status:** Active development. Not all instructions fully supported yet.  
+  * 🌐 **Resources:**  
+    - [GitHub Repository](https://github.com/PetraProver/PetraVM)  
+    - [Full Specification](https://petraprover.github.io/PetraVM/specification.html)  
+
+* **zkSync Airbender**  
+  * 📚 **Description:** zkSync Airbender is a set of build and proof tools for RISC-V programs within the zkSync ecosystem. It includes ZK circuit implementations for RISC-V, a RISC-V simulator, and utilities for witness generation, zero-knowledge proof creation, and verification.  
+  * 🔧 **Key features:**  
+    * Compilation and execution of programs on a simulated RISC-V architecture.  
+    * Custom circuits for zero-knowledge proofs.  
+    * CLI tools for end-to-end workflows (from source code to verification).  
+    * Practical examples and detailed documentation for developers.  
+    * Clearly defined security and contribution policy.  
+    * Dual license: Apache 2.0 and MIT.  
+  * ⚠️ **Status:** Active and maintained. Contributions encouraged per repository policy.  
+  * 🌐 **Resources:**  
+    - [GitHub Repository](https://github.com/matter-labs/zksync-airbender)  
+
+### Educational-Resource
+------
+* **MyZKP**  
+  * 📚 **Description:** An educational Rust implementation of zero-knowledge protocols built from scratch. Ideal for learning and experimenting with ZK proofs from the basics.  
+  * 🔧 **Key features:**  
+     * Educational design to understand core ZKP principles.  
+     * Step-by-step construction in Rust.  
+  * 🌐 **Resources:**  
+      * [GitHub Repository](https://koukyosyumei.github.io/MyZKP/index.html)  
+
+### Advanced ZKP Libraries
+----------
+
+* **Halo2**  
+  * 📚 **Description:** Halo2 is a zero-knowledge proof library providing an efficient architecture for zkSNARKs in Rust. It is particularly known for its focus on efficiency and scalability.  
+  * 🔧 **Key features:**  
+    * zkSNARK optimization using arithmetic on elliptic curves.  
+    * High-performance zero-knowledge proofs with low computational cost.  
+  * 🌐 **Resources:**  
+    - [GitHub Repository](https://github.com/zcash/halo2)  
+    - [Documentation](https://zcash.github.io/halo2/)  
+
+* **Plonky3**  
+  * 📚 **Description:** Plonky3 is a toolkit for implementing polynomial IOPs (PIOPs), such as PLONK and STARKs. It supports multiple polynomial commitment schemes like Brakedown.  
+  * 🌐 **Resources:**  
+    - [GitHub Repository](https://github.com/Plonky3/Plonky3)  
+    - [Awesome Plonky3](https://github.com/Plonky3/awesome-plonky3)  
+
+* **Lambworks**  
+  * 📚 **Description:** A library implementing SNARK and STARK provers, allowing SNARK customization. Provides cryptographic primitives, high performance, and user-friendly tools for working with ZK proofs. Supports multiple proof backends and frontends, targeting an efficient, production-ready library.  
+  * 🔧 **Key features:**  
+    * Implementation of SNARKs and STARKs.  
+    * Support for cryptographic primitives.  
+    * Performance optimization.  
+    * Compatible with multiple proof backends.  
+  * 🌐 **Resources:**  
+    - [GitHub Repository](https://github.com/lambdaclass/lambdaworks)  
+    - [Documentation](https://lambdaclass.github.io/lambdaworks/)  
+
+* **Arkworks**  
+  * 📚 **Description:** A Rust library suite providing tools for building ZK cryptography (ZKPs) and SNARKs. Enables efficient and secure proof creation for blockchain applications, supporting schemes like PLONK, Marlin, etc. Offers advanced functionality for polynomials, elliptic curves, and modular arithmetic.  
+  * 🔧 **Key features:**  
+    * Efficient implementations of finite fields and elliptic curves.  
+    * SNARK systems like Groth16 and Marlin.  
+    * Tools for R1CS circuit creation and polynomial algebra.  
+    * Supports universal proofs and pairwise inner products.  
+    * Resources for R1CS programming and SNARK proofs.  
+   * 🌐 **Resources:**  
+     - [GitHub Repository](https://github.com/arkworks-rs)  
+     - [Documentation](https://arkworks.rs/)  
+
+* **Binius**  
+  * 📚 **Description:** Optimized Rust library for efficient multilinear polynomial commitments. Designed to improve performance of ZKVMs and advanced cryptographic proofs, especially on small-bit architectures.  
+  * 🔧 **Key features:**  
+    * Significant computational cost reduction in polynomial commitment schemes.  
+    * Compatible with high-efficiency ZKVM proofs.  
+    * Optimized for binary field towers in low-level architectures.  
+    * Built in Rust for security and speed in critical operations.  
+    * Apache 2.0 license, suitable for open-source and commercial projects.  
+  * 🌐 **Resources:**  
+     - [GitHub Repository](hhttps://github.com/IrreducibleOSS/binius64)  
+     - [Technical Publication on Binius](https://www.binius.xyz/basics)  
+
+* **Bellman**  
+  * 📚 **Description:** Bellman is a Rust library providing an efficient zk-SNARK implementation for zero-knowledge cryptography. Designed for building applications requiring blockchain validity proofs, including schemes like Groth16 and optimizations. Known for efficiency and scalability with a simplified interface.  
+  * 🔧 **Key features:**  
+    * Efficient zk-SNARK implementation, especially Groth16.  
+    * Optimized for fast, low-computation proofs.  
+    * Supports advanced algebraic structures like elliptic curves.  
+    * Compatible with blockchain validity-proof applications.  
+    * Focused on scalable and efficient execution.  
+  * 🌐 **Resources:**  
+     - [GitHub Repository](https://github.com/zkcrypto/bellman)  
+     - [Official Documentation](https://docs.rs/bellman/)  
+
+* **Spartan**
+
+  * 📚 **Description:** Spartan is a Microsoft platform for creating and verifying zero-knowledge proofs (ZKPs). It is designed to be flexible and efficient, allowing developers to implement ZKPs in various applications, especially in blockchain environments. Spartan provides a set of tools that enables resource optimization in cryptographic proof execution, facilitating integration into decentralized systems.
+  * 🔧 **Key Features:**
+
+    * Flexible platform for creating ZKPs.
+    * Computational resource optimization in proof execution.
+    * Compatible with blockchain applications and decentralized systems.
+    * Tools for large-scale creation and verification of cryptographic proofs.
+  * 🌐 **Resources:**
+
+    * [Spartan GitHub Repository](https://github.com/microsoft/Spartan)
+
+* **Spartan2**
+
+  * 📚 **Description:** Spartan2 is a Microsoft-developed tool providing a platform for efficient zero-knowledge proof (ZKP) execution. It is designed for integration into blockchain systems and enables building decentralized applications through cryptographic proofs. Spartan2 improves proof efficiency and optimizes resource usage for applications requiring large-scale validity proofs.
+  * 🔧 **Key Features:**
+
+    * ZKP implementation focused on proof efficiency.
+    * Optimization to minimize computational resource usage and enhance scalability.
+    * Tools for performing validity proofs in blockchain applications.
+    * Easy integration with decentralized applications and blockchain platforms.
+  * 🌐 **Resources:**
+
+    * [Spartan2 GitHub Repository](https://github.com/microsoft/Spartan2)
+
+* **Bulletproofs**
+
+  * 📚 **Description:** Bulletproofs is an efficient zero-knowledge proof (ZKP) scheme that does not rely on a trusted setup. It provides compact and efficient range proofs, optimizing cryptographic proofs without needing trusted configurations. Bulletproofs is widely used in blockchain and cryptocurrency applications to ensure privacy and integrity without compromising performance.
+  * 🔧 **Key Features:**
+
+    * Compact range proofs without trusted setup.
+    * Optimization of cryptographic efficiency.
+    * Accelerated proofs for blockchain applications.
+    * Ideal for environments with high privacy and scalability requirements.
+  * 🌐 **Resources:**
+
+    * [Bulletproofs GitHub Repository](https://github.com/dalek-cryptography/bulletproofs)
+    * [Official Documentation](https://dalekcryptography.github.io/bulletproofs/)
+
+* **Plonk**
+
+  * 📚 **Description:** Plonk is an efficient and universal zero-knowledge proof system that allows verifying any computation within a cryptographic scheme without compromising security or trust. Plonk uses arithmetic over finite fields and is widely employed in blockchain to provide fast and scalable proofs without sacrificing privacy.
+  * 🔧 **Key Features:**
+
+    * Efficient proof system based on finite field arithmetic.
+    * Universal proofs without requiring trusted setups.
+    * Supports a wide range of applications and use cases in blockchain.
+    * High scalability and speed compared to other ZKP schemes.
+  * 🌐 **Resources:**
+
+    * [Plonk GitHub Repository](https://github.com/dusk-network/plonk)
+    * [Official Documentation](https://dusk-network.github.io/plonk/)
+
+* **Jellyfish**
+
+  * 📚 **Description:**
+    Jellyfish is a Rust library developed by Espresso Systems that implements the PLONK zero-knowledge proof system and its extensions.
+
+  * 🔧 **Key Features:**
+
+    * Complete implementation of PLONK and its extensions.
+    * Modularity and flexibility for different use cases.
+    * Optimization for fast proof generation and verification.
+    * Compatible with environments requiring privacy and scalability.
+
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/EspressoSystems/jellyfish)
+
+* **Nova**
+
+  * 📚 **Description:**
+    Nova is a high-speed recursive SNARK, a cryptographic system that allows a prover to demonstrate a mathematical statement to a verifier with a short proof and succinct verification. Nova supports Incrementally Verifiable Computation (IVC), meaning a prover can update a proof to include additional computation steps without recalculating the entire verification.
+    This approach has applications in Rollups, Verifiable Delay Functions (VDFs), succinct blockchains, and verifiable state machines.
+
+  * 🔧 **Key Features:**
+
+    * Fastest prover among known recursive systems.
+    * Constant verification circuit with roughly 10,000 multiplication gates.
+    * Implemented with a cryptographic folding scheme reducing two NP statements to one.
+    * Applications in Rollups, VDFs, and virtual machine execution like EVM and RISC-V.
+
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/microsoft/Nova)
+
+* **Kimchi**
+
+  * 📚 **Description:** Kimchi is a zero-knowledge proof (ZKP) system designed to ensure programs execute correctly. It is part of the Mina project and allows creating compact, fast proofs to verify complex computations without revealing information.
+  * 🔧 **Key Features:**
+
+    * Fast proofs and efficient verifications.
+    * Based on advanced cryptographic technology (Pasta elliptic curves).
+    * Modular, with components for hashing, polynomial commitments, and more.
+  * ⚠️ **Warning:** The project is under development, does not guarantee stability, and requires audits for production use.
+  * 🤝 **Contributions:** Open to interested developers.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/o1-labs/proof-systems)
+
+* **Lattirust**
+
+  * 📚 **Description:** Lattirust is a collection of Rust libraries for building and experimenting with zero-knowledge proofs and lattice-based succinct arguments. It focuses on post-quantum cryptography and aims to be a modular, extensible platform for research and development.
+  * 🔧 **Key Features:**
+
+    * Implementation of algebraic structures compatible with arkworks.
+    * Tools for estimating security of lattice problems.
+    * Proof schemes like LaBRADOR and Lova based on lattices.
+    * Modular architecture with multiple reusable crates.
+  * ⚠️ **Warning:** Active development project. Subject to frequent changes and not recommended for production without audits.
+  * 🤝 **Contributions:** Open to contributions. Maintained by Christian Knabenhans (EPFL).
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/lattirust)
+
+* **ZK-Garage**
+
+  * 📚 **Description:** ZK-Garage is a Rust implementation of the Plonk zero-knowledge proof (ZKP) system using the arkworks backend. It enables building efficient and flexible proofs, leveraging custom gates and lookups to improve performance and reduce the number of constraints.
+  * 🔧 **Key Features:**
+
+    * Compatible with multiple cryptographic curves via arkworks integration.
+    * Support for custom gates and lookups, optimizing proof generation.
+    * `plonk-hashing` module with optimized Poseidon hash implementation and planned support for Reinforced Concrete and Blake2s.
+    * Detailed documentation in `plonk-book` explaining system internals and PLONK-specific features.
+    * Build options allowing parallelization (`parallel`), inline assembly (`asm`), and circuit debugging tools (`trace`, `trace-print`).
+  * ⚠️ **Warning:** Active development. Functional but may change; use caution in production.
+  * 🤝 **Contributions:** Open to developers via GitHub and Discord for discussion and support.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/ZK-Garage/plonk)
+
+### ZKTLS
+
+* **TLSNotary**
+
+  * 📚 **Description:** TLSNotary is an open-source protocol and tool that enables cryptographic auditing of TLS sessions, providing verifiable proof of communications between a client and a server without compromising client privacy.
+
+  * 🔧 **Key Features:**
+
+    * Generation of cryptographic proofs for TLS sessions.
+    * Client privacy guaranteed during auditing.
+    * Compatible with a wide range of applications and web services.
+    * Ideal for use cases requiring transparency and verifiability, such as financial or legal audits.
+    * Implemented in Python, designed for accessibility and ease of use.
+
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/tlsnotary/tlsn)
+    * [Official Documentation](https://docs.tlsnotary.org/)
+
+### Tools-and-Projects
+
+* **zkemail**
+
+  * 📚 **Description:** zkemail is a project focused on ensuring secure and private email communication using zero-knowledge proofs (ZKPs).
+  * 🔧 **Key Features:**
+
+    * Secure email communication through advanced cryptographic methods.
+    * Uses zero-knowledge proofs to maintain user privacy.
+  * 🌐 **Resources:**
+
+    * [Official Site](https://prove.email)
+    * [GitHub Repository](https://github.com/zkemail)
+    * [Twitter](https://twitter.com/zkemail)
+
+* **mopro**
+
+  * 📚 **Description:** Mopro is an optimized library for zero-knowledge (ZK) proofs on mobile devices. It integrates with Circom and Halo2, significantly improving performance compared to traditional solutions like `snarkjs`. Its goal is to simplify ZK application development on mobile platforms.
+  * 🔧 **Key Features:**
+
+    * Integration with Circom and Halo2.
+    * Optimized performance for mobile devices.
+    * Simplified ZK application development.
+  * 🌐 **Resources:**
+
+    * [mopro GitHub Repository](https://github.com/zkmopro/mopro)
+   
+---
+
+## Secure-Multiparty-Computation
+
+---
+
+### MPC-Libraries
+
+* **Swanky**
+
+  * 📚 **Description:** Swanky is a library designed to facilitate the development of Multi-Party Computation (MPC, Cómputo Multi-Partido) protocols. It provides tools to implement secure data exchange schemes and computational operations among multiple parties while maintaining data privacy.
+  * 🔧 **Main features:**
+
+    * Modular and flexible implementation for experimenting with MPC protocols.
+    * Support for schemes like Garbled Circuits (GC) and Oblivious Transfer (OT).
+    * Focused on providing a solid foundation for developers interested in research and production of MPC-based solutions.
+  * 🌐 **Resources:**
+
+    * [Swanky GitHub Repository](https://github.com/GaloisInc/swanky)
+
+* **Smol-MPC**
+
+  * 📚 **Description:** Smol-MPC is a lightweight and efficient library for implementing Multi-Party Computation (MPC, Cómputo Multi-Partido) protocols. Designed by HashCloak, this library focuses on providing a simple, flexible, and optimized solution for securely and privately performing collaborative computations among multiple participants.
+  * 🔧 **Main features:**
+
+    * Compatible with basic MPC protocols, allowing collaborative operations without compromising data privacy.
+    * Lightweight and easy to integrate into projects, ideal for those seeking an accessible MPC library for experimentation or smaller applications.
+    * Focused on minimalism, making it an excellent choice for developers starting with MPC without unnecessary complexity.
+  * 🌐 **Resources:**
+
+    * [smol-mpc GitHub Repository](https://github.com/hashcloak/smol-mpc)
+    * [Documentation](https://docs.rs/smol-mpc/)
+
+* **MPZ**
+
+  * 📚 **Description:** MPZ is a collection of multi-party computation (MPC, computación multipartita) libraries written in Rust 🦀. The project aims to provide secure, efficient, modular, and portable MPC software, with a focus on usability.
+
+  * ⚠️ **Notice:** This project is under active development and should not be used in production. There may be bugs and significant changes frequently. Use at your own risk.
+
+  * 🔧 **Main features:**
+
+    * Implementation of basic primitives for secure computation in decentralized environments.
+    * DSL for creating boolean circuits declaratively, designed for multi-party computation.
+    * Implementation of fundamental OT protocols to ensure privacy in secure computation operations.
+    * Support for efficient conversions between different types of shares for secure operations.
+
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/privacy-scaling-explorations/mpz)
+
+### MPC-Frameworks
+
+* **stoffelMPC**
+
+  * 📚 **Description:** StoffelMPC is a framework for multi-party computation (MPC, Cómputo Multi-Partido). It allows developers to write MPC software in a domain-specific language that abstracts the internal details of MPC protocols.
+
+These MPC programs are compiled to bytecode for the StoffelVM, a virtual machine that allows execution in a multi-party environment. Our implementation focuses on robust MPC protocols, as these are relevant in the context of MPC as a sidechain. This means MPC is used to provide the privacy layer currently missing in public blockchains.
+
+* 🔧 **Main features:**
+
+  * Allows writing programs in a domain-specific language, simplifying multi-party computation development.
+  * Programs are compiled to bytecode to run on StoffelVM, a specialized virtual machine.
+  * Focused on robust protocols, ideal for applications requiring high security and reliability.
+  * Provides a privacy layer for public blockchains, protecting data and transactions.
+* 🌐 **Resources:**
+
+  * [GitHub Repository](https://github.com/hashcloak/stoffelMPC)
+
+---
+
+### MPC\_Tools
+
+* **Garble-lang**
+
+  * 📚 **Description:** Garble-lang is a simple programming language specialized in secure computation and executing calculations on encrypted data using garbled circuits. Its goal is to enable developers to implement private applications via multi-party computation (MPC, computación multipartita), protecting data privacy without decrypting it.
+  * 🔧 **Main features:**
+
+    * High-level language for building and executing garbled computation circuits.
+    * Allows secure calculations on encrypted data without revealing sensitive information.
+    * Facilitates the creation of privacy-requiring applications, such as smart contracts and private data analysis.
+    * Provides tools for integration with other secure computation and privacy protocols.
+    * Offers an efficient framework for implementing MPC.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/sine-fdn/garble-lang)
+    * [Documentation](https://garble-lang.org)
+
+* Tandem
+
+  * 📚 **Description:** Tandem is an open-source, secure, and maliciously robust multi-party computation (MPC, computación multipartita) engine designed to be integrable and accessible. Its goal is to allow companies and developers to perform collaborative computations on encrypted data using garbled circuits, protecting privacy without revealing underlying information. Developed by the SINE Foundation, Tandem transforms sensitive data into value opportunities through advanced cryptography.
+
+    * 🔧 **Main features:**
+
+      * High-performance engine for running garbled circuits in secure two-party computation.
+      * Allows computations on encrypted data without compromising party privacy.
+      * Facilitates practical applications requiring confidentiality, such as joint data analysis and secure collaboration between organizations.
+      * Includes tools like an HTTP server, a CLI client, and WebAssembly support, as well as integration with Garble, a high-level language for MPC.
+      * Provides an efficient and user-friendly framework for implementing multi-party computation in real-world scenarios.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/sine-fdn/tandem)
+    * [SINE Foundation Website](https://sine.foundation/tandem)
+
+## Fully-Homomorphic-Encryption
+
+---
+
+### FHE-Libraries
+
+* **tfhe-rs**
+
+  * 📚 **Description:** Tfhe-rs is a Rust library implementing fully homomorphic encryption (TFHE). It provides an efficient and secure way to perform operations on encrypted data, allowing sensitive information to be processed without decryption.
+  * 🔧 **Main features:**
+
+    * Fully homomorphic encryption (TFHE) implementation.
+    * Enables arithmetic and logical operations on encrypted data.
+    * High efficiency in processing encrypted data.
+    * Compatible with privacy and secure computation applications.
+    * Facilitates the development of data protection and privacy solutions in decentralized environments.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/zama-ai/tfhe-rs)
+    * [Documentation](https://docs.zama.ai/tfhe-rs)
+
+* **Openfhe-rs**
+
+  * 📚 **Description:** Rust implementation of OpenFHE, an open-source fully homomorphic encryption (FHE) framework. Allows operations on encrypted data without decryption, maintaining privacy during processing. OpenFHE is an emerging technology essential for privacy and secure computation applications in trusted environments.
+  * 🔧 **Main features:**
+
+    * Homomorphic encryption implementation in Rust.
+    * Supports a wide variety of operations on encrypted data without decryption.
+    * Based on OpenFHE, known for security and flexibility.
+    * Enables developers to create applications that protect data privacy during processing.
+    * Compatible with multiple advanced homomorphic encryption methods.
+    * Optimized for secure computation and data protection applications.
+    * Modular and extensible design for easy integration into different projects.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/fairmath/openfhe-rs)
+    * [Documentation](https://openfhe-rust-wrapper.readthedocs.io/en/latest/)
+
+* **Phantom-Zone**
+
+  * 📚 **Description:** Phantom-Zone is a library enabling efficient and secure Multi-Party Computation (MPC, Cómputo Multi-Partido) protocol construction. Developed by Gauss Labs, it is designed to be scalable and applicable in high-privacy environments. Focuses on robust implementations for collaborative calculations without compromising data security.
+  * 🔧 **Main features:**
+
+    * Uses fully multiplicative homomorphic encryption for calculations on private inputs from multiple parties.
+    * Offers two types of multi-party protocols: non-interactive and interactive.
+    * Supports arithmetic operations and comparisons on 8-bit unsigned integers (FheUint8), handling overflow and divide-by-zero errors.
+    * The library is experimental and should not be used in production for sensitive data due to lack of security auditing.
+
+* 🌐 **Resources:**
+
+  * [GitHub Repository](https://github.com/gausslabs/phantom-zone)
+
+## Hash-Function
+
+### Hash-Functions-and-Friends
+
+* **RustCrypto/hashes**
+
+  * 📚 **Description:** RustCrypto/hashes is a collection of cryptographic hash function implementations developed in Rust. The repository includes support for widely used hash algorithms designed to be secure and efficient. Essential for projects requiring data integrity, digital signature verification, and cryptographic applications.
+  * 🔧 **Main features:**
+
+    * Secure, actively developed implementations of hash functions like SHA-2, SHA-3, Blake2, and more.
+    * Compatibility with authenticated hash algorithms like Poly1305.
+    * Modular design for easy integration in Rust projects.
+    * Focus on performance and security through optimized code and extensive testing.
+    * Fully compatible with `no_std`, suitable for resource-constrained environments.
+    * Actively maintained by RustCrypto community, with regular contributions and updates for Rust language support.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/gausslabs/phantom-zone)
+
+* **BLAKE3**
+
+  * 📚 **Description:** BLAKE3 is a modern cryptographic hash function designed to be fast, secure, and highly parallelizable. Developed by the BLAKE3 team, it combines features from algorithms like BLAKE2, SHA-3, and Merkle-Damgård, offering exceptional performance across platforms, from mobile devices to high-performance servers.
+  * 🔧 **Main features:**
+
+    * Faster than SHA-2 and SHA-3 hash functions in most environments.
+    * Highly parallelizable, scaling on multi-core and SIMD hardware.
+    * Supports incremental hashing, keyed hashing, and key derivation.
+    * Built on a secure design using a Merkle tree, enabling efficient hashing of large datasets.
+    * Implementations available in multiple languages, including Rust, C, Python, and more.
+    * Audited and supported by a wide developer community.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/BLAKE3-team/BLAKE3)
+
+* **RustCrypto/KDFs**
+
+  * 📚 **Description:** RustCrypto/KDFs is a collection of Key Derivation Function (KDF) implementations developed in Rust. Supports widely used algorithms for generating secure keys from inputs like passwords or master keys. Designed for security, efficiency, and easy Rust project integration.
+  * 🔧 **Main features:**
+
+    * Supports KDF algorithms like HKDF (HMAC-based Extract-and-Expand Key Derivation Function) and PBKDF2 (Password-Based Key Derivation Function 2).
+    * Secure and efficient design with performance optimization.
+    * Compatible with `no_std`, suitable for constrained environments.
+    * Modular, easy to integrate into Rust applications needing derived keys.
+    * Maintained by RustCrypto community with regular contributions and thorough testing.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/RustCrypto/KDFs)
+
+* **RustCrypto/universal-hashes**
+
+  * 📚 **Description:** RustCrypto/universal-hashes is a collection of universal hash function implementations developed in Rust. Mainly used as building blocks for cryptographic algorithms, such as message authentication codes (MACs) and authenticated encryption (AEAD).
+  * 🔧 **Main features:**
+
+    * Implements universal hash functions like Poly1305 and GHASH (used in Galois/Counter Mode, GCM).
+    * Secure, efficient, and easy to integrate into Rust applications.
+    * Compatible with `no_std`, ideal for resource-constrained systems.
+    * Modular and compatible with other RustCrypto components for smooth integration.
+    * Actively maintained by RustCrypto community, focused on security and performance.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/RustCrypto/universal-hashes)
+
+* **tiny-keccak**
+
+  * 📚 **Description:** **tiny-keccak** is a minimalist, efficient Rust implementation of the Keccak hash function, also the basis of the SHA-3 standard. Lightweight and easy to use, ideal for applications needing a secure, high-performance hash in resource-limited environments.
+  * 🔧 **Main features:**
+
+    * Supports Keccak and SHA-3, including SHAKE (Extendable-Output Functions, XOFs) variants.
+    * Lightweight, optimized for low resource consumption.
+    * `no_std` compatible, suitable for embedded systems.
+    * Easy integration into Rust projects due to modular design and clear documentation.
+    * Maintained by the Rust community, emphasizing simplicity and security.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/debris/tiny-keccak)
+
+### Poseidon
+
+* **Poseidon252**
+
+  * 📚 **Description:** **Poseidon252** is a highly efficient implementation of the Poseidon hash function, developed by the Dusk Network team in Rust. Poseidon is optimized for zk-SNARKs and zk-STARKs circuits, mainly used in advanced cryptography applications like privacy and zero-knowledge proofs.
+  * 🔧 **Main features:**
+
+    * Poseidon implementation over the 252-bit scalar field, ideal for elliptic curve cryptography and zero-knowledge proof applications.
+    * Designed for efficiency in ZKP circuits, reducing constraints in proofs.
+    * `no_std` compatible, suitable for embedded systems and resource-constrained environments.
+    * Easy integration into cryptographic projects requiring secure, efficient hashing.
+    * Actively maintained by Dusk Network team, focusing on privacy and scalability applications.
+
+* 🌐 **Resources:**
+
+  * [GitHub Repository](https://github.com/dusk-network/poseidon252)
+
+* **Poseidon2**
+
+  * 📚 **Description:** **Poseidon2** is an optimized implementation of the Poseidon hash function developed by **Horizen Labs** in Rust. Poseidon is a cryptographic hash algorithm specifically designed for zero-knowledge proof applications (zk-SNARKs and zk-STARKs), offering efficient construction in terms of circuit constraints.
+  * 🔧 **Main features:**
+
+    * Optimized Poseidon hash algorithm implementation for zk circuits.
+    * Focused on improving performance and reducing constraints in zero-knowledge proofs.
+    * `no_std` compatible, allowing integration into resource-constrained devices.
+    * Ideal for privacy and security applications like smart contracts, digital identities, and decentralized systems.
+    * Actively maintained by Horizen Labs, focusing on advanced cryptography applications.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/HorizenLabs/poseidon2)
+
+* **Poseidon**
+
+  * 📚 **Description:** **Poseidon** is a Rust implementation of the Poseidon hash function, designed by **Privacy & Scaling Explorations**. Optimized for zero-knowledge proofs (zk-SNARKs and zk-STARKs) and applications requiring efficiency and cryptographic security in advanced environments.
+  * 🔧 **Main features:**
+
+    * Poseidon implementation with support for highly customizable configurations depending on the field and zk circuit.
+    * Specific optimizations to reduce constraints in zk circuits, improving proof performance.
+    * Designed for easy integration with advanced cryptography and scalability projects.
+    * `no_std` compatible, suitable for embedded or resource-constrained environments.
+    * Actively maintained by Privacy & Scaling Explorations, focusing on scalability and privacy technologies.
+  * 🌐 **Resources:**
+
+  - [GitHub Repository](https://github.com/privacy-scaling-explorations/poseidon)
+
+### Password-Hashing-Functions
+
+* **RustCrypto/password-hashes**
+
+  * 📚 **Description:** **RustCrypto/password-hashes** is a collection of Password Hashing Function (PHF) implementations in Rust. Provides secure and efficient solutions to protect passwords in applications and systems requiring robust storage and validation.
+  * 🔧 **Main features:**
+
+    * Password hashing implementations such as Argon2, bcrypt, and PBKDF2.
+    * Optimized for security and resistance against brute-force attacks, using adjustable cost factors to increase security.
+    * `no_std` compatible, suitable for embedded systems.
+    * Easy integration in Rust projects, focusing on simplicity and security.
+    * Actively maintained by RustCrypto community, providing secure and efficient password handling solutions.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/RustCrypto/password-hashes/tree/master)
+
+* **rust-bcrypt**
+
+  * 📚 **Description:** **rust-bcrypt** is a Rust implementation of bcrypt, a password hashing algorithm resistant to brute-force attacks. Widely used to protect stored passwords, bcrypt uses an adjustable cost factor to increase computation time and security.
+  * 🔧 **Main features:**
+
+    * Bcrypt implementation with adjustable cost factor to enhance security against dictionary and brute-force attacks.
+    * Uses a random salt for each password, ensuring identical passwords produce different hashes.
+    * Simple and secure interface for creating, verifying, and comparing password hashes.
+    * `no_std` compatible, suitable for resource-constrained or embedded environments.
+    * Actively maintained with regular updates to ensure security and efficiency.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/Keats/rust-bcrypt)
+
+* **phpass**
+
+  * 📚 **Description:** **phpass** is a PHP implementation of bcrypt and password hashing, designed to be lightweight and efficient. Uses bcrypt with a random salt to protect stored passwords. Provides an extra security layer, making dictionary and brute-force attacks much harder.
+  * 🔧 **Main features:**
+
+    * Bcrypt algorithm implementation for password hashing.
+    * Supports creating and verifying passwords with a random salt, ensuring identical passwords have different hashes.
+    * Configurable cost factor, allowing security adjustment against brute-force attacks based on available computational power.
+    * Actively maintained with regular improvements to ensure security and efficiency.
+    * Compatible with PHP applications of any size, from small websites to large-scale apps.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/clausehound/phpass)
+
+* **RustCrypto/formats/pkcs5**
+
+  * 📚 **Description:**
+    **RustCrypto/formats/pkcs5** is an implementation of the PKCS #5 format standards for password management in Rust. PKCS #5 defines a format for password-based key derivation, which is fundamental for password cryptography security. This repository provides an efficient and secure implementation of these formats, including key derivation using functions like PBKDF2.
+  * 🔧 **Main features:**
+
+    * PBKDF2 implementation, a password-based key derivation algorithm using a repeat-function approach to protect passwords against dictionary attacks.
+    * `no_std` compatible, allowing use in embedded systems or resource-constrained environments.
+    * Provides a simple and secure interface for deriving keys from passwords in Rust applications.
+    * Actively maintained by the RustCrypto community, focusing on the security and efficiency of cryptographic functions.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/RustCrypto/formats/tree/master/pkcs5)
+* **rust-argon2**
+
+  * 📚 **Description:**
+    **rust-argon2** is a Rust implementation of the Argon2 key derivation function. Argon2 is a password hashing algorithm resistant to brute-force attacks, designed to be secure in resource-constrained environments. This implementation is designed to be efficient, flexible, and easy to use, allowing adjustment of computation time and memory usage to enhance security.
+  * 🔧 **Main features:**
+
+    * Implementation of the Argon2 key derivation algorithm with support for all three operation modes: Argon2d, Argon2i, and Argon2id.
+    * Allows tuning of iterations, memory size, and parallelism to optimize resource usage and increase security.
+    * Random "salt" function ensures identical passwords produce different hashes.
+    * `no_std` compatible, suitable for embedded and resource-limited environments.
+    * Actively maintained by the Rust community, focusing on security and flexibility.
+  * 🌐 **Resources:**
+
+    * [GitHub Repository](https://github.com/sru-systems/rust-argon2)
+
