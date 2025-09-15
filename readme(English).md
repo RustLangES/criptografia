@@ -528,7 +528,7 @@ With these resources, you can dive into the exciting world of cryptography and z
     * Built in Rust for security and speed in critical operations.  
     * Apache 2.0 license, suitable for open-source and commercial projects.  
   * 🌐 **Resources:**  
-     - [GitHub Repository](hhttps://github.com/IrreducibleOSS/binius64)  
+     - [GitHub Repository](https://github.com/IrreducibleOSS/binius64)  
      - [Technical Publication on Binius](https://www.binius.xyz/basics)  
 
 * **Bellman**  
