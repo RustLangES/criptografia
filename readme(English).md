@@ -9,7 +9,7 @@ With these resources, you can dive into the exciting world of cryptography and z
 
 ---
 
-## 🛠️ **Featured Libraries and Projects**
+## 🛠️ **Libraries and Projects**
 * [Post-Quantum](#post-quantum)
   * [PQS Libraries](#pqs-libraries)
 * [ZKPs](#zero-knowledge)
