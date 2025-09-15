@@ -532,8 +532,8 @@ Las **pruebas de conocimiento cero** son un tipo de protocolo criptográfico que
     * Construido en Rust, aprovechando su seguridad y velocidad para operaciones críticas.  
     * Licencia Apache 2.0, adecuada para proyectos de código abierto y comerciales.  
   * 🌐 **Recursos:**  
-     - [Repositorio GitHub](https://github.com/IrreducibleOSS/binius)  
-     - [Publicación técnica sobre Binius](https://www.irreducible.com/posts/better-faster-smaller-binius)
+     - [Repositorio GitHub](hhttps://github.com/IrreducibleOSS/binius64)  
+     - [Publicación técnica sobre Binius](https://www.binius.xyz/basics)
    
   * * **Bellman**  
   * 📚 **Descripción:** Bellman es una biblioteca de Rust que proporciona una implementación eficiente de zk-SNARKs para criptografía de conocimiento cero. Está diseñada para facilitar la construcción de aplicaciones que requieren pruebas de validez en blockchains, incluyendo esquemas de pruebas como Groth16 y sus optimizaciones. Bellman es conocida por su enfoque en la eficiencia y la escalabilidad, ofreciendo una interfaz que simplifica el desarrollo de sistemas criptográficos en blockchain.  
