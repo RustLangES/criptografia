@@ -22,7 +22,7 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
   * [Librerias de MPC](https://github.com/RustLangES/criptografia/blob/main/README.md#librerias-de-mpc)
   * [Frameworks de MPC](https://github.com/RustLangES/criptografia/blob/main/README.md#frameworks-de-mpc)
   * [MPC Tools](https://github.com/RustLangES/criptografia/blob/main/README.md#mpc_tools)
-* [FHE](##Fully-Homomorphic-Encryption)
+* [FHE](Fully-Homomorphic-Encryption)
   * [Librerias de FHE](https://github.com/RustLangES/criptografia/blob/main/README.md#fully-homomorphic-encryption)
 * [Hash Function](https://github.com/RustLangES/criptografia/blob/main/README.md#hash-function)
   * [Hash Functions and Friends](https://github.com/RustLangES/criptografia/blob/main/README.md#hash-functions-and-friends)
@@ -773,7 +773,7 @@ Estos programas de MPC se compilan a bytecode para el StoffelVM, que es una máq
 ---------------------
 ### Librerias-de-FHE
 
-* **tfhe-rs**  
+* **Zama-tfhe-rs**  
   * 📚 **Descripción:** Tfhe-rs es una biblioteca en Rust que implementa la encriptación homomórfica totalmente funcional (TFHE, por sus siglas en inglés). Proporciona una forma eficiente y segura de realizar operaciones en datos cifrados, lo que permite el procesamiento de información sensible sin necesidad de descifrarla.  
   * 🔧 **Características principales:**  
     * Implementación de encriptación homomórfica totalmente funcional (TFHE).  
@@ -808,6 +808,45 @@ Estos programas de MPC se compilan a bytecode para el StoffelVM, que es una máq
     * La librería se encuentra en etapa experimental y no debe utilizarse en producción para manejar datos sensibles debido a la falta de auditoría de seguridad.
  * 🌐 **Recursos:**  
     - [Repositorio GitHub](https://github.com/gausslabs/phantom-zone)
+* **Poulpy**  
+  * 📚 **Descripción:** Poulpy es una librería experimental de **encriptación homomórfica totalmente (FHE)** escrita en **Rust**, desarrollada por **Phantom Zone**, orientada a investigación y prototipos para realizar cálculos sobre datos cifrados. Utiliza una representación de polinomios bivariados sobre el **Torus** en lugar del sistema RNS tradicional.  
+  * 🔧 **Características principales:**  
+    * Arquitectura modular y agnóstica al hardware mediante una capa de abstracción (HAL).  
+    * Representación de polinomios bivariados para una aritmética simplificada y eficiente.  
+    * Soporte para esquemas LWE, GLWE, GGLWE y GGSW con backends CPU intercambiables.  
+    * Espacio de texto plano unificado usando el Torus para esquemas RLWE.  
+    * Proyecto en desarrollo, no recomendado para producción por falta de auditoría de seguridad.  
+  * 🌐 **Recursos:**  
+    - 🔗 [Repositorio GitHub](https://github.com/phantomzone-org/poulpy)  
+    - 🔗 [Crates.io — `poulpy-hal`](https://crates.io/crates/poulpy-hal)
+
+
+* **Sunscreen**  
+  * 📚 **Descripción:** Sunscreen es una librería experimental de **encriptación homomórfica totalmente (FHE)** escrita en **Rust**, desarrollada por **Sunscreen Tech**, orientada a investigación y prototipos para realizar cálculos sobre datos cifrados. Ofrece un compilador de alto nivel con macros que simplifican la escritura de programas FHE.  
+  * 🔧 **Características principales:**  
+    * API de alto nivel con macros `#[fhe_program]` para escribir código FHE de forma natural.  
+    * Soporte para el esquema BFV y una nueva variante TFHE en el repositorio SPF.  
+    * Integración con **Zero-Knowledge Proofs (ZKP)** para aplicaciones híbridas de privacidad.  
+    * Playground interactivo en línea y documentación extensa para aprendizaje.  
+    * Proyecto en desarrollo, no recomendado para producción por falta de auditoría de seguridad.  
+  * 🌐 **Recursos:**  
+    - 🔗 [Repositorio GitHub (BFV)](https://github.com/Sunscreen-tech/Sunscreen)
+    - 🔗 [Repositorio GitHub (TFHE — SPF)](https://github.com/Sunscreen-tech/spf/) 
+    - 🔗 [Playground interactivo](https://playground.sunscreen.tech/)  
+
+
+* **fhe.rs**  
+  * 📚 **Descripción:** fhe.rs es una librería experimental de **encriptación homomórfica totalmente (FHE)** escrita en **Rust**, desarrollada por **Tancrède Lepoint**, orientada a investigación y prototipos para realizar cálculos sobre datos cifrados. Implementa el esquema BFV con rendimiento comparable a bibliotecas en C++ y Go.  
+  * 🔧 **Características principales:**  
+    * Implementación completa del esquema BFV con representación RNS optimizada.  
+    * Rendimiento comparable o superior a Microsoft SEAL (C++) y Lattigo (Go).  
+    * Código 100 % Rust puro, sin dependencias externas en C/C++.  
+    * API de bajo nivel con control granular sobre parámetros criptográficos.  
+    * Proyecto en estado beta, no recomendado para producción por falta de auditoría de seguridad.  
+  * 🌐 **Recursos:**  
+    - 🔗 [Repositorio GitHub](https://github.com/tlepoint/fhe.rs)
+
+
    
 ## Hash-Function
 ### Hash-Functions-and-Friends
