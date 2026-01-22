@@ -161,6 +161,19 @@ Con estos recursos, puedes adentrarte en el emocionante mundo de la criptografí
   * 🌐 **Recursos:**  
       - [Repositorio GitHub](https://github.com/ait-crypto/faest-rs)  
 
+* **crypto-rs**  
+  * 📚 **Descripción:**  
+    `crypto-rs` es una colección de primitivas y envoltorios criptográficos en Rust que unifica varias bibliotecas existentes bajo una API coherente. Está diseñada como un *wrapper* ligero para simplificar el uso de funciones criptográficas comunes —como RSA, EdDSA, HPKE y codificación CBOR— y facilitar su integración en aplicaciones Rust, sin implementar directamente los algoritmos subyacentes.  
+
+  * 🔧 **Características principales:**  
+      - Proporciona envoltorios para primitivas criptográficas estándar (RSA‑2048, Ed25519, etc.).  
+      - Soporta cifrado y encapsulación híbrida (HPKE) usando algoritmos modernos como X25519 y ChaCha20‑Poly1305.  
+      - Operaciones de derivación de claves con Argon2 y HKDF.  
+      - Codificación/decodificación CBOR ligera y generación de bytes aleatorios compatibles con WASM.  
+      - API modular mediante *feature flags* para incluir solo las funcionalidades necesarias.  
+
+  * 🌐 **Recursos:**  
+      - [Repositorio GitHub](https://github.com/dark-bio/crypto-rs)
 
 ## Zero-Knowledge
 📖 **¿Qué son las Pruebas de Conocimiento Cero (ZKPs)?**
